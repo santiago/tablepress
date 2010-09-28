@@ -1,0 +1,7 @@
+%h1 Contacto
+%p Nombre: #{@contacto[:nombre]}
+%p Email: #{@contacto[:email]}
+%p Asunto: #{@contacto[:asunto]}
+%p Mensaje #{@contacto[:mensaje]}
+
+%a{:href=>"mailto:#{@contacto[:email]}"} Responder a #{@contacto[:email]}

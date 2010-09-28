@@ -1,0 +1,43 @@
+!!! Strict
+%html{:xmlns=>"http://www.w3.org/1999/xhtml"}
+  = render "shared/head"
+  %body
+    #wrap
+      #superior
+        %ul#menu
+          %li
+            %a#logo{:href => "#"} &nbsp;
+          %li
+            %a#inicio.texto-menu{:href => "/", :class=>"#{@at=='inicio' ? 'on' : nil}"} inicio
+          %li
+            %a#empresa.texto-menu{:href => "/home/empresa", :class=>"#{@at=='empresa' ? 'on' : nil}"} empresa
+          %li#productos-item
+            %a#productos.texto-menu{:href => "/home/productos", :class=>"#{@at=='productos' ? 'on' : nil}"} productos
+            #desplegable-fondo{:style=>"display:none"}
+              %ul#productos-lista
+                %li.first
+                  %a.menu-desplegable{:href => "/productos/chapilla"} chapilla
+                %li
+                  %a.menu-desplegable{:href => "/productos/cantos"} cantos
+                %li
+                  %a.menu-desplegable{:href => "/productos/tableros#"} tableros
+                .centro &nbsp;
+                .bottom &nbsp;
+                .seleccionado &nbsp;
+
+          // %li
+          //  %a#servicios.texto-menu{:href => "/home/servicios", :class=>"#{@at=='servicios' ? 'on' : nil}"} servicios
+          %li
+            %a#contactenos.texto-menu{:href => "/home/contacto", :class=>"#{@at=='contacto' ? 'on' : nil}"} cont&aacute;ctenos
+          %li
+            %input{:type => "text", :value => "buscar"}/
+            %button buscar
+        #beneficios
+          %a#link-beneficios{:href => "/home/beneficios"} beneficios
+      #inferior
+        = yield :layout
+    #background
+      %img.stretch{:src => "/images/nogal.jpg"}/
+    = render "shared/javascripts"
+    = javascript_include_tag "menu"
+    = yield :javascripts

@@ -1,0 +1,31 @@
+.imagenes.edit
+  :javascript
+    window._token = '#{u form_authenticity_token if protect_against_forgery?}';
+    var session_key_name = '#{ActionController::Base.session_options[:key]}';
+    var session_key_val = '#{u cookies[ActionController::Base.session_options[:key]]}';
+  - if @product.new_record?
+    .thumb.empty
+      %p.label Thumb
+      .image
+        %img{:src=>""}
+        // %p.click-image click
+        %input{:type=>"file", :name=>"uploadify-thumb", :id=>"uploadify-thumb"}
+    .zoom.empty
+      %p.label Zoom
+      .image
+        %img{:src=>""}
+        // %p.click-image click para agregar imagen
+        %input{:type=>"file", :name=>"uploadify-zoom", :id=>"uploadify-zoom"}
+  - else
+    .thumb
+      %p.label Thumb
+      .image
+        %img{:src=>"/images/products/#{@product.thumb_image}"}
+        // %p.click-image click
+        %input{:type=>"file", :name=>"uploadify-thumb", :id=>"uploadify-thumb"}
+    .zoom
+      %p.label Zoom
+      .image
+        %img{:src=>"/images/products/#{@product.zoom_image}"}
+        // %p.click-image click para agregar imagen
+        %input{:type=>"file", :name=>"uploadify-zoom", :id=>"uploadify-zoom"}

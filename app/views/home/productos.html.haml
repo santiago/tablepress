@@ -1,0 +1,71 @@
+#izquierda
+  #izquierda-fondo
+    .top &nbsp;
+    .centro &nbsp;
+    .bottom &nbsp;
+    #contenido-zoom
+      #zoom
+        %img{:src=>""}
+      #icono-hoja &nbsp;
+      .nombre-producto
+        %p#nombre-zoom Ebano
+        %p#codigo-zoom cod TP-0100
+#derecha
+  #galeria
+    #flecha-izq
+      %span <
+    #contenido-galeria
+      - (@products.size.div(8)+1).times do |i|
+        .lista-container
+          %ul.lista-thumbs{:style=>"#{i>0 ? 'display:none' : nil}"}
+            - j=0
+            - @products[i*4..((4*(i+1))-1)].each do |product|
+              - j= j+1
+              %li.thumb{:id=>"product-#{product.id}", :class=>"#{j.modulo(4)==0 ? 'last' : nil}"}
+                %a{:href => "#"} 
+                  %img{:src=>"/images/products/#{product.thumb_image}"}
+    #flecha-der
+      %span >
+  #descripcion
+    .info
+      %h2 Chapilla madera decorativa
+      %p Para aplicaciones en acabados tales como cantos u otros, ofrecemos nuestra variedad de chapilla en diferentes especiescomo complemento ideal para el ebanista o carpintero en hojasde 250 x 64 cm y cantos prefabricados.
+    #especs{:style => "display:none"}
+      .spec 
+        %p.label Ancho
+        .datos
+          %p.dato-1 0.60 mm 
+          %p.dato-2 0.60 mm 
+      .spec 
+        %p.label Largo
+        .datos
+          %p.dato-1 0.60 mm 
+          %p.dato-2 0.60 mm 
+      .spec
+        %p.label Espesor
+        .datos
+          %p.dato-1 0.60 mm 
+          %p.dato-2 0.60 mm 
+      .spec
+        %p.label Contenido de Humedad
+        .datos
+          %p.dato-1 0.60 mm 
+          %p.dato-2 0.60 mm 
+    #abre-especs
+      %a{:href => "#"} Especificaciones
+
+  #products-data{:style=>"display:none;"}
+    - @products.each do |product|
+      %div{:class=>"#{product.id}"}
+        #zoom
+          %img{:src=>"/images/products/#{product.zoom_image}"}
+        #icono-hoja &nbsp;
+        .nombre-producto
+          %p#nombre-zoom #{product.name}
+          %p#codigo-zoom #{product.code}
+
+=content_for(:javascripts) do
+  = javascript_include_tag "app"
+
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/styles.css', :media => 'screen'

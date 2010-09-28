@@ -1,0 +1,89 @@
+/* line 2, ../../../app/stylesheets/desplegable.sass */
+#menu #productos-item {
+  width: 149px;
+  height: 1px;
+}
+/* line 5, ../../../app/stylesheets/desplegable.sass */
+#menu #productos {
+  position: absolute;
+  z-index: 2000;
+}
+
+/* line 9, ../../../app/stylesheets/desplegable.sass */
+#beneficios {
+  background: url("/images/pestana-beneficios.png") no-repeat 0 0 transparent;
+  position: relative;
+  height: 80px;
+  width: 250px;
+  top: 62px;
+  left: 950px;
+  z-index: 4;
+}
+
+/* line 18, ../../../app/stylesheets/desplegable.sass */
+#link-beneficios {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 4px;
+  left: 65px;
+}
+
+/* line 25, ../../../app/stylesheets/desplegable.sass */
+#tab-beneficios {
+  background: url("/images/pestana-beneficios") no-repeat 0 0 transparent;
+}
+
+/* line 28, ../../../app/stylesheets/desplegable.sass */
+#productos-lista {
+  z-index: 4;
+  left: 489px;
+  width: 100px;
+}
+/* line 34, ../../../app/stylesheets/desplegable.sass */
+#productos-lista li.first {
+  margin-top: 70px;
+}
+/* line 36, ../../../app/stylesheets/desplegable.sass */
+#productos-lista .centro {
+  background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent;
+  height: 200px;
+  width: 143px;
+}
+/* line 40, ../../../app/stylesheets/desplegable.sass */
+#productos-lista .bottom {
+  background: url("/images/desplegable-bottom.png") no-repeat 0 0 transparent;
+  width: 143px;
+}
+
+/* line 45, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo {
+  position: absolute;
+  z-index: 1000;
+  top: 8px;
+  left: 490px;
+  width: 141px;
+}
+
+/* line 52, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .seleccionado {
+  height: 35px;
+  width: 141px;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 77px;
+  left: 0px;
+  z-index: -1;
+}
+
+/* line 62, ../../../app/stylesheets/desplegable.sass */
+#productos-lista .menu-desplegable {
+  color: white;
+  z-index: 5;
+  margin-left: 20px;
+  line-height: 3em;
+  top: -10px;
+  display: block;
+  text-decoration: none;
+}

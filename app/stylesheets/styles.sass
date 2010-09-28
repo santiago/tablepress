@@ -1,0 +1,260 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
+  background-color: #EEEEEE
+  height: 100%
+  overflow: hidden
+  width: 100%
+
+#background
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0px
+  top: 0px
+  z-index: -1
+
+.stretch
+  width: 100%
+  height: 100%
+
+#wrap
+  height: 100%
+  width: 100%
+  position: relative
+
+#superior
+  height: 50px
+  width: 100%
+  position: relative
+
+#menu
+  background-color: #41660F
+  height: 55px
+  width: 100%
+  //position: relative
+  margin-top: 8px
+  z-index: 1
+  float: left
+
+#logo
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent
+  height: 60px
+  width: 180px
+  margin-left: 45px
+  position: relative
+  margin-top: 7px
+  float: left
+
+#inicio, #empresa, #productos, #servicios, #contactenos
+  position: relative
+  margin-left: 50px
+  float: left
+  width: -1px
+  display: block
+  margin-top: 15px
+  text-decoration: none
+
+#menu
+  input
+    margin-top: 20px
+    margin-left: 70px
+  li
+    float: left
+    list-style-type: none
+    display: block
+    a.on
+      color: white
+  .texto-menu
+    font-family: verdana
+    font-size: 20px
+    color: #A4DC22
+    font-weight: lighter
+  .on
+    text-decoration: none
+
+#inferior
+  height: 520px
+  width: 1260px
+  z-index: 2
+  position: absolute
+
+#izquierda
+  height: 500px
+  width: 600px
+  margin-left: 20px
+
+#izquierda-fondo
+  position: absolute
+  width: 550px
+  z-index: 3
+
+#izquierda
+  .top
+    background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent
+    height: 50px
+    margin-top: 10px
+  .centro
+    background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent
+    height: 435px
+  .bottom
+    background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent
+    height: 55px
+
+#contenido-zoom
+  height: 500px
+  float: left
+  position: absolute
+  width: 520px
+  top: 0
+  left: 0
+  margin-top: 50px
+
+#zoom
+  background: url("/images/ebano.png") no-repeat 0 0 transparent
+  height: 375px
+  position: absolute
+  width: 450px
+  top: 0
+  left: 0
+  margin-top: 10px
+  margin-left: 36px
+
+#icono-hoja
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent
+  height: 50px
+  width: 50px
+  position: relative
+  float: right
+  top: 405px
+  margin-right: 35px
+
+#contenido-zoom .nombre-producto
+  height: 150px
+  position: relative
+  width: 450px
+  top: 392px
+  left: 40px
+
+#nombre-zoom
+  font-family: verdana
+  color: #FFFFFF
+  font-size: 24px
+
+#codigo-zoom
+  font-family: verdana
+  color: #FFFFFF
+  font-size: 24px
+  font-size: 20px
+  margin-top: 10px
+
+/*
+ *Aqui empieza el código de gui
+
+#izquierda
+  float: left
+
+#derecha
+  float: left
+  position: relative
+  // border: 2px dashed black
+  // background-color: #AAA
+  width: 451px
+  height: 500px
+  margin-top: 35px
+
+#flecha-izq, #flecha-der, #contenido-galeria
+  float: left
+
+#flecha-izq, #flecha-der
+  color: white
+  font-size: 35px
+  font-weight: 900
+  padding: 74px 16px 16px
+
+#galeria
+  margin-top: 50px
+
+#contenido-galeria
+  width: 330px
+
+.lista-thumbs
+  float: left
+
+#derecha
+  .lista-thumbs .thumb
+    width: 75px
+    height: 62px
+    // border: 2px dotted black
+    background-color: white
+    float: left
+    margin: 10px 10px 10px 0
+    display: block
+    &.last
+      margin-right: 0
+    a
+      display: block
+  #descripcion
+    clear: left
+    float: left
+    margin-top: 20px
+    position: absolute
+    bottom: 0
+    .info
+      position: relative
+      padding: 10px 20px
+      background: url(/images/pixel-contacto-formulario.png) repeat-y 0 0
+    h2
+      font-weight: lighter
+      color: white
+    .info p
+      font-size: 13px
+      text-align: justify
+      line-height: 1.4em
+      color: #F8FCDD
+  #abre-especs
+    width: 451px
+    background: url(/images/pixel-especificaciones.png) repeat-y 0 0
+    float: left
+    a
+      font-size: 16px
+      padding: 10px 0
+      float: right
+      margin-right: 50px
+      color: white
+      text-decoration: none
+
+#especs
+  position: absolute
+  bottom: 40px
+  left: 0
+  background: url(/images/pixel-contacto-formulario.png) repeat-y 0 0
+  color: white
+  // opacity: 0.6;
+  height: 460px
+  width: 100%
+  overflow: auto
+  p
+    font-size: 14px
+  .spec
+    width: 100%
+    margin: 5px 0
+    clear: both
+    p
+      padding: 0
+      margin: 10px
+      margin-bottom: 0
+      &.label
+        background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent
+        padding: 3px
+      &.dato-1, &.dato-2
+        text-align: right
+        width: 40%
+        margin: 5px 15px 20px 20px
+      &.dato-1
+        float: left
+      &.dato-2
+        float: right

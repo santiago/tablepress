@@ -1,0 +1,350 @@
+/* line 1, ../../../app/stylesheets/styles.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../app/stylesheets/styles.sass */
+body {
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+  background-color: #eeeeee;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 12, ../../../app/stylesheets/styles.sass */
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+/* line 20, ../../../app/stylesheets/styles.sass */
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, ../../../app/stylesheets/styles.sass */
+#wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 29, ../../../app/stylesheets/styles.sass */
+#superior {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 34, ../../../app/stylesheets/styles.sass */
+#menu {
+  background-color: #41660f;
+  height: 55px;
+  width: 100%;
+  margin-top: 8px;
+  z-index: 1;
+  float: left;
+}
+
+/* line 43, ../../../app/stylesheets/styles.sass */
+#logo {
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
+  height: 60px;
+  width: 180px;
+  margin-left: 45px;
+  position: relative;
+  margin-top: 7px;
+  float: left;
+}
+
+/* line 52, ../../../app/stylesheets/styles.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos {
+  position: relative;
+  margin-left: 50px;
+  float: left;
+  width: -1px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* line 62, ../../../app/stylesheets/styles.sass */
+#menu input {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+/* line 65, ../../../app/stylesheets/styles.sass */
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+}
+/* line 69, ../../../app/stylesheets/styles.sass */
+#menu li a.on {
+  color: white;
+}
+/* line 71, ../../../app/stylesheets/styles.sass */
+#menu .texto-menu {
+  font-family: verdana;
+  font-size: 20px;
+  color: #a4dc22;
+  font-weight: lighter;
+}
+/* line 76, ../../../app/stylesheets/styles.sass */
+#menu .on {
+  text-decoration: none;
+}
+
+/* line 79, ../../../app/stylesheets/styles.sass */
+#inferior {
+  height: 520px;
+  width: 1260px;
+  z-index: 2;
+  position: absolute;
+}
+
+/* line 85, ../../../app/stylesheets/styles.sass */
+#izquierda {
+  height: 500px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+/* line 90, ../../../app/stylesheets/styles.sass */
+#izquierda-fondo {
+  position: absolute;
+  width: 550px;
+  z-index: 3;
+}
+
+/* line 96, ../../../app/stylesheets/styles.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+  margin-top: 10px;
+}
+/* line 100, ../../../app/stylesheets/styles.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 103, ../../../app/stylesheets/styles.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 107, ../../../app/stylesheets/styles.sass */
+#contenido-zoom {
+  height: 500px;
+  float: left;
+  position: absolute;
+  width: 520px;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+/* line 116, ../../../app/stylesheets/styles.sass */
+#zoom {
+  background: url("/images/ebano.png") no-repeat 0 0 transparent;
+  height: 375px;
+  position: absolute;
+  width: 450px;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 36px;
+}
+
+/* line 126, ../../../app/stylesheets/styles.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: right;
+  top: 405px;
+  margin-right: 35px;
+}
+
+/* line 135, ../../../app/stylesheets/styles.sass */
+#contenido-zoom .nombre-producto {
+  height: 150px;
+  position: relative;
+  width: 450px;
+  top: 392px;
+  left: 40px;
+}
+
+/* line 142, ../../../app/stylesheets/styles.sass */
+#nombre-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+}
+
+/* line 147, ../../../app/stylesheets/styles.sass */
+#codigo-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/*Aqui empieza el código de gui */
+/* line 157, ../../../app/stylesheets/styles.sass */
+#izquierda {
+  float: left;
+}
+
+/* line 160, ../../../app/stylesheets/styles.sass */
+#derecha {
+  float: left;
+  position: relative;
+  width: 451px;
+  height: 500px;
+  margin-top: 35px;
+}
+
+/* line 169, ../../../app/stylesheets/styles.sass */
+#flecha-izq, #flecha-der, #contenido-galeria {
+  float: left;
+}
+
+/* line 172, ../../../app/stylesheets/styles.sass */
+#flecha-izq, #flecha-der {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  padding: 74px 16px 16px;
+}
+
+/* line 178, ../../../app/stylesheets/styles.sass */
+#galeria {
+  margin-top: 50px;
+}
+
+/* line 181, ../../../app/stylesheets/styles.sass */
+#contenido-galeria {
+  width: 330px;
+}
+
+/* line 184, ../../../app/stylesheets/styles.sass */
+.lista-thumbs {
+  float: left;
+}
+
+/* line 188, ../../../app/stylesheets/styles.sass */
+#derecha .lista-thumbs .thumb {
+  width: 75px;
+  height: 62px;
+  background-color: white;
+  float: left;
+  margin: 10px 10px 10px 0;
+  display: block;
+}
+/* line 196, ../../../app/stylesheets/styles.sass */
+#derecha .lista-thumbs .thumb.last {
+  margin-right: 0;
+}
+/* line 198, ../../../app/stylesheets/styles.sass */
+#derecha .lista-thumbs .thumb a {
+  display: block;
+}
+/* line 200, ../../../app/stylesheets/styles.sass */
+#derecha #descripcion {
+  clear: left;
+  float: left;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 206, ../../../app/stylesheets/styles.sass */
+#derecha #descripcion .info {
+  position: relative;
+  padding: 10px 20px;
+  background: url(/images/pixel-contacto-formulario.png) repeat-y 0 0;
+}
+/* line 210, ../../../app/stylesheets/styles.sass */
+#derecha #descripcion h2 {
+  font-weight: lighter;
+  color: white;
+}
+/* line 213, ../../../app/stylesheets/styles.sass */
+#derecha #descripcion .info p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.4em;
+  color: #f8fcdd;
+}
+/* line 218, ../../../app/stylesheets/styles.sass */
+#derecha #abre-especs {
+  width: 451px;
+  background: url(/images/pixel-especificaciones.png) repeat-y 0 0;
+  float: left;
+}
+/* line 222, ../../../app/stylesheets/styles.sass */
+#derecha #abre-especs a {
+  font-size: 16px;
+  padding: 10px 0;
+  float: right;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 230, ../../../app/stylesheets/styles.sass */
+#especs {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  background: url(/images/pixel-contacto-formulario.png) repeat-y 0 0;
+  color: white;
+  height: 460px;
+  width: 100%;
+  overflow: auto;
+}
+/* line 240, ../../../app/stylesheets/styles.sass */
+#especs p {
+  font-size: 14px;
+}
+/* line 242, ../../../app/stylesheets/styles.sass */
+#especs .spec {
+  width: 100%;
+  margin: 5px 0;
+  clear: both;
+}
+/* line 246, ../../../app/stylesheets/styles.sass */
+#especs .spec p {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0;
+}
+/* line 250, ../../../app/stylesheets/styles.sass */
+#especs .spec p.label {
+  background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent;
+  padding: 3px;
+}
+/* line 253, ../../../app/stylesheets/styles.sass */
+#especs .spec p.dato-1, #especs .spec p.dato-2 {
+  text-align: right;
+  width: 40%;
+  margin: 5px 15px 20px 20px;
+}
+/* line 257, ../../../app/stylesheets/styles.sass */
+#especs .spec p.dato-1 {
+  float: left;
+}
+/* line 259, ../../../app/stylesheets/styles.sass */
+#especs .spec p.dato-2 {
+  float: right;
+}

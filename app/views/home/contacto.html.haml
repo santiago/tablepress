@@ -1,0 +1,37 @@
+#izquierda
+  #izquierda-fondo
+    .top &nbsp;
+    .centro &nbsp;
+    .bottom &nbsp;
+    #contenido-zoom
+      #contacto
+        %p#contacto-titulo Contactenos
+        %a#contacto-mail{:href => "mailto:ventas@table-press.com"} ventas@table-press.com
+        %p#contacto-informacion
+          Carrera 42 # 75-367 Interior 104
+          %br/
+          Centro Industrial del Sur
+          %br>/
+          Tel&eacute;fono : (4) 376.26.77
+          %br>/
+          Itag&uuml;i - Colombia
+      #icono-hoja &nbsp;
+#derecha
+  #fondo-derecha
+    #contacto-formulario
+      %p.formulario nombre
+      %input{:type => "text", :name => "nombre"}/
+      %p.formulario e-mail
+      %input{:type => "text", :name => "email"}/
+      %p.formulario asunto
+      %input{:type => "text", :name => "asunto"}/
+      #formulario-mensaje
+        %p.formulario mensaje
+        %textarea{:name => "mensaje"}
+      %button enviar
+
+=content_for(:javascripts) do
+  = javascript_include_tag "contacto"
+
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/contacto.css', :media => 'screen'

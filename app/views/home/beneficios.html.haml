@@ -1,0 +1,27 @@
+#izquierda
+  #contenedor-beneficios
+    %img{:src => "/images/beneficios-1.png"}/
+    %img{:src => "/images/beneficios-2.png"}/
+    %img{:src => "/images/beneficios-3.png"}/
+#derecha
+  #fondo-derecha
+  %p#beneficios-texto
+    %b Nuestros Beneficios
+    %br/
+    %br/
+    Tenemos un exclusivo catalogo con referencias de chapillas importadas que se convierte en una excelente herramienta de venta para nuestros clientes
+    %br/
+    Entregamos nuestros productos en todo el territorio nacional.
+  %ul#beneficios-lista
+    %li Oportunidad de entrega en punto de venta
+    %li Tecnologia de punta con maquinaria de ultima generacion
+    %li Calidad en nuestros procesos
+    %li Modelo de negocio que se ajusta a las necesidades de nuestros clientes.
+    %li Costo de flete con precios diferenciales por acuerdo con proveedores de tranporte
+    %li Asesoria y asistencia en el punto de venta por nuestra fuerza de ventas.
+    %li Productos novedosos con las ultimas tendencias de diseno del mercado
+    %li Ubicacion estrategica en el area metropolitana de Medellin
+
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/beneficios.css', :media => 'screen'
+

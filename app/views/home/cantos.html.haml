@@ -1,0 +1,36 @@
+#izquierda
+  #izquierda-fondo
+    .top &nbsp;
+    .centro &nbsp;
+    .bottom &nbsp;
+    #contenido-zoom
+      #zoom
+        %img{:src=>"/images/cantos-1.png"}
+        %img{:src=>"/images/cantos-2.png"}
+        %img{:src=>"/images/cantos-3.png"}
+      #icono-hoja &nbsp;
+      .nombre-producto
+        %p#nombre-zoom cantos
+#derecha
+  #fondo-derecha
+  %p#texto-cantos-tableros
+    %b Carretes
+    %br/
+    15mm - 18mm - 22mm - 25mm - 35mm - 42mm - 52mm - 60mm.
+    %br/
+    %br/
+    %b Canto Lineal
+    %br/
+    250cm - 15m - 18m - 22m - 25m
+    %br/
+    35mm - 42mm - 52mm - 60mm
+    %br/
+    %br/
+    %b Calibre
+    %br/
+    0,6mm - 1,2mm - 1,5mm
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/cantos.css', :media => 'screen'
+=content_for(:javascripts) do
+  = jquery_plugin "cycle/jquery.cycle.lite.min"
+  = javascript_include_tag "slideshow"

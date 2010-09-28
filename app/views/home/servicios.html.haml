@@ -1,0 +1,23 @@
+#izquierda
+  #izquierda-fondo
+  .top &nbsp;
+  .centro &nbsp;
+  .bottom &nbsp
+  #contenido-zoom
+    #zoom &nbsp;
+    #icono-hoja &nbsp;
+    .nombre-producto
+      %p#nombre-zoom cantos
+#derecha
+  #fotos-servicios
+    %a.imagen-servicio{:href=>"#"}
+      %img{:src=>"/images/servicios-1.png"}
+    %a.imagen-servicio{:href=>"#"}
+      %img{:src=>"/images/servicios-2.png"}
+    %a.imagen-servicio{:href=>"#"}
+      %img{:src=>"/images/servicios-3.png"}
+  #fondo-derecha
+  %p#servicios-texto <b> Servicio de Enchape </b><br/><br/> Ofrecemos nuestro servicio de enchape, utilizando sustratos suministrados por nuestros clientes on nuestra exclusiva chapilla de madera reconstituida o con su chapilla de madera natural. <br /> Trabajamos con todos los calibres, en diferentes sustratos con tiempos de entrega oportuna, de acuerdo al numero de tablero solicitados. <br /> Nuestra ubicacion geografica en Medellin nos permite atender el mercado nacional con alto grado de eficiencia.
+
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/servicios.css', :media => 'screen'

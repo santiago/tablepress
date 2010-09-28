@@ -1,0 +1,256 @@
+/* line 1, ../../../app/stylesheets/contacto.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../app/stylesheets/contacto.sass */
+body {
+  background-color: #eeeeee;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* line 12, ../../../app/stylesheets/contacto.sass */
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+/* line 20, ../../../app/stylesheets/contacto.sass */
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, ../../../app/stylesheets/contacto.sass */
+#wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 29, ../../../app/stylesheets/contacto.sass */
+#superior {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 34, ../../../app/stylesheets/contacto.sass */
+#menu {
+  background-color: #41660f;
+  height: 55px;
+  width: 100%;
+  margin-top: 8px;
+  z-index: 1;
+  float: left;
+}
+
+/* line 43, ../../../app/stylesheets/contacto.sass */
+#logo {
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
+  height: 60px;
+  width: 180px;
+  margin-left: 45px;
+  position: relative;
+  margin-top: 7px;
+  float: left;
+}
+
+/* line 52, ../../../app/stylesheets/contacto.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos {
+  position: relative;
+  margin-left: 50px;
+  float: left;
+  width: -1px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* line 62, ../../../app/stylesheets/contacto.sass */
+#menu input {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+/* line 65, ../../../app/stylesheets/contacto.sass */
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+}
+/* line 69, ../../../app/stylesheets/contacto.sass */
+#menu li a.on {
+  color: white;
+}
+/* line 71, ../../../app/stylesheets/contacto.sass */
+#menu .texto-menu {
+  font-size: 20px;
+  color: #a4dc22;
+  font-weight: lighter;
+}
+/* line 75, ../../../app/stylesheets/contacto.sass */
+#menu .on {
+  text-decoration: none;
+}
+
+/* line 78, ../../../app/stylesheets/contacto.sass */
+#inferior {
+  height: 520px;
+  width: 1260px;
+  z-index: 2;
+  position: absolute;
+}
+
+/* line 84, ../../../app/stylesheets/contacto.sass */
+#izquierda {
+  height: 500px;
+  width: 600px;
+  margin-left: 30px;
+  float: left;
+}
+
+/* line 90, ../../../app/stylesheets/contacto.sass */
+#izquierda-fondo {
+  position: absolute;
+  width: 550px;
+  z-index: 3;
+}
+
+/* line 96, ../../../app/stylesheets/contacto.sass */
+#izquierda .top {
+  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
+  height: 50px;
+  margin-top: 10px;
+}
+/* line 100, ../../../app/stylesheets/contacto.sass */
+#izquierda .centro {
+  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
+  height: 435px;
+}
+/* line 103, ../../../app/stylesheets/contacto.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+}
+
+/* line 107, ../../../app/stylesheets/contacto.sass */
+#contenido-zoom {
+  height: 500px;
+  float: left;
+  position: absolute;
+  width: 520px;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+}
+
+/* line 116, ../../../app/stylesheets/contacto.sass */
+#contacto {
+  height: 375px;
+  position: absolute;
+  width: 450px;
+  top: 0;
+  left: 0;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+/* line 125, ../../../app/stylesheets/contacto.sass */
+#contacto-titulo, #contacto-mail, #contacto-informacion {
+  color: white;
+  font-size: 18px;
+}
+
+/* line 129, ../../../app/stylesheets/contacto.sass */
+#contacto-titulo {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* line 134, ../../../app/stylesheets/contacto.sass */
+#contacto-mail {
+  color: #7effff;
+}
+
+/* line 137, ../../../app/stylesheets/contacto.sass */
+#contacto-informacion {
+  line-height: 2.3em;
+  margin-top: 15px;
+}
+
+/* line 141, ../../../app/stylesheets/contacto.sass */
+#icono-hoja {
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  float: right;
+  top: 405px;
+  margin-right: 35px;
+}
+
+/* line 150, ../../../app/stylesheets/contacto.sass */
+#derecha {
+  height: 500px;
+  width: 500px;
+  z-index: 3;
+  float: left;
+  margin-left: 55px;
+  position: relative;
+}
+
+/* line 158, ../../../app/stylesheets/contacto.sass */
+#fondo-derecha {
+  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
+  height: 497px;
+  margin-top: 32px;
+  position: relative;
+}
+
+/* line 164, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario {
+  height: 450px;
+  margin-top: 32px;
+  width: 400px;
+  position: absolute;
+  height: 0px;
+  left: 0px;
+}
+/* line 171, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario input, #contacto-formulario textarea {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 24px;
+  width: 350px;
+  opacity: 0.7;
+}
+/* line 177, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario p.formulario {
+  color: white;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+/* line 182, ../../../app/stylesheets/contacto.sass */
+#formulario-mensaje {
+  width: 400px;
+}
+/* line 184, ../../../app/stylesheets/contacto.sass */
+#formulario-mensaje textarea {
+  height: 100px;
+}
+
+/* line 187, ../../../app/stylesheets/contacto.sass */
+#contacto-formulario button {
+  float: right;
+  margin-top: 10px;
+}

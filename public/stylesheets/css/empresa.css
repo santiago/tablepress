@@ -1,0 +1,171 @@
+/* line 1, ../../../app/stylesheets/empresa.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../app/stylesheets/empresa.sass */
+body {
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+  background-color: #eeeeee;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 12, ../../../app/stylesheets/empresa.sass */
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
+
+/* line 20, ../../../app/stylesheets/empresa.sass */
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, ../../../app/stylesheets/empresa.sass */
+#wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 29, ../../../app/stylesheets/empresa.sass */
+#superior {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 34, ../../../app/stylesheets/empresa.sass */
+#menu {
+  background-color: #41660f;
+  height: 55px;
+  width: 100%;
+  position: relative;
+  margin-top: 8px;
+  z-index: 1;
+  float: left;
+}
+
+/* line 43, ../../../app/stylesheets/empresa.sass */
+#logo {
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
+  height: 60px;
+  width: 180px;
+  margin-left: 45px;
+  position: relative;
+  margin-top: 7px;
+  float: left;
+}
+
+/* line 52, ../../../app/stylesheets/empresa.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos {
+  position: relative;
+  margin-left: 50px;
+  float: left;
+  width: -1px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* line 62, ../../../app/stylesheets/empresa.sass */
+#menu input {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+/* line 65, ../../../app/stylesheets/empresa.sass */
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+}
+/* line 69, ../../../app/stylesheets/empresa.sass */
+#menu li a.on {
+  color: white;
+}
+/* line 71, ../../../app/stylesheets/empresa.sass */
+#menu .texto-menu {
+  font-family: verdana;
+  font-size: 20px;
+  color: #a4dc22;
+  font-weight: lighter;
+}
+/* line 76, ../../../app/stylesheets/empresa.sass */
+#menu .on {
+  text-decoration: none;
+}
+
+/* line 79, ../../../app/stylesheets/empresa.sass */
+#inferior {
+  height: 520px;
+  width: 1260px;
+  z-index: 2;
+  position: absolute;
+}
+
+/* line 85, ../../../app/stylesheets/empresa.sass */
+#izquierda {
+  height: 500px;
+  width: 600px;
+  margin-left: 20px;
+  float: left;
+}
+
+/* line 91, ../../../app/stylesheets/empresa.sass */
+#foto-empresa {
+  background: url("/images/foto-empresa.png") no-repeat 0 0 transparent;
+  height: 500px;
+  width: 800px;
+  z-index: 3;
+  margin-top: 45px;
+  margin-left: 26px;
+}
+
+/* line 99, ../../../app/stylesheets/empresa.sass */
+#derecha {
+  height: 500px;
+  width: 400px;
+  z-index: 3;
+  float: left;
+  margin-left: 220px;
+  position: relative;
+}
+/* line 106, ../../../app/stylesheets/empresa.sass */
+#derecha .top {
+  background: url("/images/fondo-superior-leyenda-empresa.png") no-repeat 0 0 transparent;
+  height: 73px;
+  margin-top: 45px;
+}
+/* line 110, ../../../app/stylesheets/empresa.sass */
+#derecha .centro {
+  background: url("/images/pixel-leyenda-empresa.png") repeat-y 0 0 transparent;
+  height: 380px;
+}
+/* line 113, ../../../app/stylesheets/empresa.sass */
+#derecha .bottom {
+  background: url("/images/fondo-inferior-leyenda-empresa.png") no-repeat 0 0 transparent;
+  height: 50px;
+}
+
+/* line 117, ../../../app/stylesheets/empresa.sass */
+#contenido-empresa {
+  width: 290px;
+  height: 390px;
+  position: absolute;
+  top: 125px;
+  left: 22px;
+  font-family: verdana;
+  color: #f8fcdd;
+  font-size: 13px;
+  text-align: justify;
+  overflow: auto;
+  padding-right: 15px;
+}

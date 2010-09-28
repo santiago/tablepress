@@ -1,0 +1,26 @@
+#admin.container
+  #top-menu
+    %ul
+      %li
+        %a{:href=>"/admin"} Productos
+      %li
+        %a{:href=>"#"} Contenido
+
+  #content
+    #nuevo-producto
+      %a{:href=>"/admin/products/new"} Agregar producto
+
+    %ul.lista-productos
+      - @products.each do |product|
+        %li.producto-item{:id=>"producto-#{product.id}"}
+          .thumb
+            %img{:src=>"/images/products/#{product.thumb_image}"}
+          %p.codigo #{product.code}
+          %p.nombre #{product.name}
+
+    #nuevo-producto
+      %a{:href=>"/admin/products/new"} Agregar producto
+
+    .bottom-spacing &nbsp;
+=content_for(:stylesheets) do
+  = stylesheet_link_tag 'css/admin.css', :media => 'screen'

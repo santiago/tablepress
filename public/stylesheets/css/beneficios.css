@@ -1,0 +1,182 @@
+/* line 1, ../../../app/stylesheets/beneficios.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../../app/stylesheets/beneficios.sass */
+body {
+  background-color: #eeeeee;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* line 12, ../../../app/stylesheets/beneficios.sass */
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+/* line 20, ../../../app/stylesheets/beneficios.sass */
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, ../../../app/stylesheets/beneficios.sass */
+#wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 29, ../../../app/stylesheets/beneficios.sass */
+#superior {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 34, ../../../app/stylesheets/beneficios.sass */
+#menu {
+  background-color: #41660f;
+  height: 55px;
+  width: 100%;
+  margin-top: 8px;
+  z-index: 1;
+  float: left;
+}
+
+/* line 43, ../../../app/stylesheets/beneficios.sass */
+#logo {
+  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
+  height: 60px;
+  width: 180px;
+  margin-left: 45px;
+  position: relative;
+  margin-top: 7px;
+  float: left;
+}
+
+/* line 52, ../../../app/stylesheets/beneficios.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos {
+  position: relative;
+  margin-left: 50px;
+  float: left;
+  width: -1px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* line 62, ../../../app/stylesheets/beneficios.sass */
+#menu input {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+/* line 65, ../../../app/stylesheets/beneficios.sass */
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+}
+/* line 69, ../../../app/stylesheets/beneficios.sass */
+#menu li a.on {
+  color: white;
+}
+/* line 71, ../../../app/stylesheets/beneficios.sass */
+#menu .texto-menu {
+  font-family: verdana;
+  font-size: 20px;
+  color: #a4dc22;
+  font-weight: lighter;
+}
+/* line 76, ../../../app/stylesheets/beneficios.sass */
+#menu .on {
+  text-decoration: none;
+}
+
+/* line 79, ../../../app/stylesheets/beneficios.sass */
+#inferior {
+  height: 520px;
+  width: 1260px;
+  z-index: 2;
+  position: absolute;
+}
+
+/* line 85, ../../../app/stylesheets/beneficios.sass */
+#izquierda {
+  height: 700px;
+  width: 400px;
+  margin-left: 100px;
+  float: left;
+}
+
+/* line 91, ../../../app/stylesheets/beneficios.sass */
+#contenedor-beneficios {
+  margin-top: 30px;
+}
+
+/* line 94, ../../../app/stylesheets/beneficios.sass */
+#izquierda img {
+  margin-top: 10px;
+  float: left;
+}
+
+/* line 98, ../../../app/stylesheets/beneficios.sass */
+#derecha {
+  height: 510px;
+  width: 470px;
+  float: left;
+  position: relative;
+  z-index: 3;
+  margin-left: 80px;
+}
+
+/* line 106, ../../../app/stylesheets/beneficios.sass */
+#fondo-derecha {
+  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
+  height: 510px;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* line 112, ../../../app/stylesheets/beneficios.sass */
+#beneficios-texto {
+  color: #f8fcdd;
+  line-height: 1.6em;
+  width: 390px;
+  margin-top: 50px;
+  margin-left: 35px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: justify;
+  font-size: 14px;
+}
+/* line 123, ../../../app/stylesheets/beneficios.sass */
+#beneficios-texto b {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* line 128, ../../../app/stylesheets/beneficios.sass */
+#beneficios-lista {
+  color: #f8fcdd;
+  line-height: 1.6em;
+  width: 390px;
+  margin-top: 215px;
+  margin-left: 35px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: justify;
+  font-size: 14px;
+}

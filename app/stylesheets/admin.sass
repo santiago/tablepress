@@ -1,0 +1,156 @@
+@import base
+
+*
+  margin: 0
+  padding: 0
+
+li, li a
+  display: block
+
+li a
+  padding: 10px
+
+a
+  color: black
+  text-decoration: none
+
+body
+  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
+  background-color: #DEFFE2
+  width: 100%
+
+object
+  float: left
+
+.bottom-spacing
+  width: 100%
+  margin: 50px
+
+#admin
+  background-color: white
+  +container
+
+#top-menu
+  +column(20, true)
+  li
+    float: left
+
+#content
+  +column(23, true)
+  +prepend(1)
+
+.lista-productos
+  +column(11, true)
+  .producto-item
+    +column(10, true)
+    border: 1px solid #AAA
+    padding: 5px
+    margin-bottom: 10px
+    font-size: 14px
+    cursor: pointer
+    &.on
+      background-color: #EEE
+  .thumb 
+    +column(3)
+    width: 75px
+    height: 62px
+  .codigo
+    +column(3)
+  .nombre
+    +column(7, true)
+
+
+.producto
+  .nombre, .codigo
+    input
+      border: 1px solid #AAA
+      height: 30px
+      font-size: 20px
+  .nombre
+    +column(10)
+    input
+      width: 380px
+  .codigo
+    +column(5)
+    input
+      width: 180px
+  .tipo_producto
+    +column(5, true)
+    padding-bottom: 20px
+  .thumb
+  .zoom
+
+  .especificaciones, .imagenes, .control, #nuevo-producto
+    +column(21, true)
+
+  .especificaciones
+    p
+      font-size: 16px
+    li
+      margin: 10px 0
+      p, input
+        width: 200px
+        padding: 3px 10px
+        border: 1px solid #AAA
+      .label
+        font-size: 14px
+        background-color: #AAA
+        padding: 3px 10px
+        color: #EEE
+    input
+      font-size: 14px
+  .imagenes
+    .click-image
+      display: none
+    .thumb, .zoom
+      &.empty
+        .image
+          border: 2px dashed #000
+          background-color: #FFF
+        .click-image
+          display: block
+          text-align: center
+    .thumb
+      +column(5)
+      .image
+        width: 75px
+        height: 62px
+      .click-image
+        margin-top: 20px
+        font-size: 14px
+    .zoom
+      +column(16, true)
+      .image
+        width: 450px
+        height: 372px
+      .click-image
+        margin-top: 170px
+        font-size: 18px
+  .control
+    .activo
+      +column(10)
+      input, p
+        float: left
+      input
+        margin: 3px 10px 0 0
+    .eliminar
+      +column(10, true)
+      a
+        float: right
+        text-decoration: underline
+
+.edit
+  border: 1px solid #AAA
+  background-color: #EEE
+  padding: 10px
+  margin: 10px 0
+
+#nuevo-producto, #guardar-producto
+  margin: 10px 0
+  +column(21, true)
+  a
+    float: right
+    padding: 10px
+    border: 1px solid #AAA
+    background-color: #EEE
+
