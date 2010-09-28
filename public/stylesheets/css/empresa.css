@@ -20,7 +20,7 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* line 20, ../../../app/stylesheets/empresa.sass */
@@ -48,7 +48,6 @@ body {
   background-color: #41660f;
   height: 55px;
   width: 100%;
-  position: relative;
   margin-top: 8px;
   z-index: 1;
   float: left;
