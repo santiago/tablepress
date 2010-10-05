@@ -43,6 +43,10 @@ class HomeController < ApplicationController
     @at= "empresa"
   end
 
+  def empresa2
+    @at= "empresa"
+  end
+
   def beneficios
     @at= "beneficios"
   end

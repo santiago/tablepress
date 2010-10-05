@@ -116,39 +116,39 @@ body {
   position: relative;
 }
 
-/* line 3, ../../../app/stylesheets/cantos.sass */
+/* line 5, ../../../app/stylesheets/tableros.sass */
 #izquierda {
   height: 500px;
-  width: 600px;
+  width: 560px;
   margin-left: 40px;
   float: left;
 }
 
-/* line 9, ../../../app/stylesheets/cantos.sass */
+/* line 11, ../../../app/stylesheets/tableros.sass */
 #izquierda-fondo {
   position: absolute;
   width: 550px;
   z-index: 3;
 }
 
-/* line 15, ../../../app/stylesheets/cantos.sass */
+/* line 17, ../../../app/stylesheets/tableros.sass */
 #izquierda .top {
   background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
   height: 50px;
   margin-top: 10px;
 }
-/* line 19, ../../../app/stylesheets/cantos.sass */
+/* line 21, ../../../app/stylesheets/tableros.sass */
 #izquierda .centro {
   background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
   height: 435px;
 }
-/* line 22, ../../../app/stylesheets/cantos.sass */
+/* line 24, ../../../app/stylesheets/tableros.sass */
 #izquierda .bottom {
   background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
   height: 55px;
 }
 
-/* line 26, ../../../app/stylesheets/cantos.sass */
+/* line 28, ../../../app/stylesheets/tableros.sass */
 #contenido-zoom {
   height: 500px;
   float: left;
@@ -159,7 +159,7 @@ body {
   margin-top: 50px;
 }
 
-/* line 35, ../../../app/stylesheets/cantos.sass */
+/* line 37, ../../../app/stylesheets/tableros.sass */
 #zoom {
   height: 375px;
   position: absolute;
@@ -170,7 +170,7 @@ body {
   margin-left: 36px;
 }
 
-/* line 45, ../../../app/stylesheets/cantos.sass */
+/* line 47, ../../../app/stylesheets/tableros.sass */
 #icono-hoja {
   background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
   height: 50px;
@@ -181,7 +181,7 @@ body {
   margin-right: 35px;
 }
 
-/* line 54, ../../../app/stylesheets/cantos.sass */
+/* line 56, ../../../app/stylesheets/tableros.sass */
 #contenido-zoom .nombre-producto {
   height: 150px;
   position: relative;
@@ -190,14 +190,14 @@ body {
   left: 40px;
 }
 
-/* line 61, ../../../app/stylesheets/cantos.sass */
+/* line 63, ../../../app/stylesheets/tableros.sass */
 #nombre-zoom, #codigo-zoom {
   font-family: verdana;
   color: white;
   font-size: 24px;
 }
 
-/* line 66, ../../../app/stylesheets/cantos.sass */
+/* line 68, ../../../app/stylesheets/tableros.sass */
 #derecha {
   height: 500px;
   width: 470px;
@@ -207,7 +207,7 @@ body {
   margin-left: 60px;
 }
 
-/* line 74, ../../../app/stylesheets/cantos.sass */
+/* line 76, ../../../app/stylesheets/tableros.sass */
 #fondo-derecha {
   background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
   height: 350px;
@@ -215,7 +215,7 @@ body {
   position: relative;
 }
 
-/* line 80, ../../../app/stylesheets/cantos.sass */
+/* line 82, ../../../app/stylesheets/tableros.sass */
 #texto-cantos-tableros, #texto-tableros {
   color: #f8fcdd;
   line-height: 1.6em;
@@ -228,13 +228,129 @@ body {
   text-align: justify;
   font-size: 16px;
 }
-/* line 91, ../../../app/stylesheets/cantos.sass */
+/* line 93, ../../../app/stylesheets/tableros.sass */
 #texto-cantos-tableros b, #texto-tableros b {
   font-size: 18px;
   color: white;
 }
 
-/* line 95, ../../../app/stylesheets/cantos.sass */
+/* line 97, ../../../app/stylesheets/tableros.sass */
 #texto-tableros {
   margin-top: 140px;
+}
+
+/* line 100, ../../../app/stylesheets/tableros.sass */
+#derecha {
+  float: left;
+  position: relative;
+  width: 480px;
+  height: 490px;
+  margin-top: 35px;
+  border: 2px dashed black;
+}
+
+/* line 109, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb {
+  width: 100px;
+  height: 83px;
+  background-color: white;
+  float: left;
+  margin: 10px 10px 10px 0;
+  display: block;
+}
+/* line 116, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb.last {
+  margin-right: 0;
+}
+/* line 118, ../../../app/stylesheets/tableros.sass */
+#derecha .lista-thumbs .thumb a {
+  display: block;
+}
+/* line 120, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion {
+  clear: left;
+  float: left;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 126, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion .info {
+  position: relative;
+  padding: 10px 20px;
+  background: url(/images/pixel-productos-info.png) repeat-y 0 0;
+}
+/* line 130, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion h2 {
+  font-weight: lighter;
+  color: white;
+  padding: 10px 0;
+}
+/* line 134, ../../../app/stylesheets/tableros.sass */
+#derecha #descripcion .info p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.4em;
+  color: #f8fcdd;
+}
+/* line 139, ../../../app/stylesheets/tableros.sass */
+#derecha #abre-especs {
+  width: 480px;
+  background: url(/images/pixel-productos-especificaciones.png) repeat-y 0 0;
+  float: left;
+}
+/* line 143, ../../../app/stylesheets/tableros.sass */
+#derecha #abre-especs a {
+  font-size: 16px;
+  padding: 10px 0;
+  float: right;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 151, ../../../app/stylesheets/tableros.sass */
+#especs {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  background: url(/images/pixel-productos-info.png) repeat-y 0 0;
+  color: white;
+  height: 340px;
+  width: 100%;
+  overflow: auto;
+}
+/* line 160, ../../../app/stylesheets/tableros.sass */
+#especs p {
+  font-size: 14px;
+}
+/* line 162, ../../../app/stylesheets/tableros.sass */
+#especs .spec {
+  width: 100%;
+  margin: 5px 0;
+  clear: both;
+}
+/* line 166, ../../../app/stylesheets/tableros.sass */
+#especs .spec p {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0;
+}
+/* line 170, ../../../app/stylesheets/tableros.sass */
+#especs .spec p.label {
+  background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent;
+  padding: 3px;
+}
+/* line 173, ../../../app/stylesheets/tableros.sass */
+#especs .spec p.dato-1, #especs .spec p.dato-2 {
+  text-align: right;
+  margin: 5px 25px 10px 20px;
+}
+/* line 177, ../../../app/stylesheets/tableros.sass */
+#especs .spec p.dato-1 {
+  float: left;
+}
+/* line 179, ../../../app/stylesheets/tableros.sass */
+#especs .spec p.dato-2 {
+  float: right;
 }

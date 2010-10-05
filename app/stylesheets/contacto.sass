@@ -1,85 +1,4 @@
-*
-  margin: 0
-  padding: 0
-
-body
-  background-color: #EEEEEE
-  height: 100%
-  overflow: hidden
-  width: 100%
-  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
-
-#background
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0px
-  top: 0px
-  z-index: -1
-
-.stretch
-  width: 100%
-  height: 100%
-
-#wrap
-  height: 100%
-  width: 100%
-  position: relative
-
-#superior
-  height: 50px
-  width: 100%
-  position: relative
-
-#menu
-  background-color: #41660F
-  height: 55px
-  width: 100%
-  // position: relative
-  margin-top: 8px
-  z-index: 1
-  float: left
-
-#logo
-  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent
-  height: 60px
-  width: 180px
-  margin-left: 45px
-  position: relative
-  margin-top: 7px
-  float: left
-
-#inicio, #empresa, #productos, #servicios, #contactenos
-  position: relative
-  margin-left: 50px
-  float: left
-  width: -1px
-  display: block
-  margin-top: 15px
-  text-decoration: none
-
-#menu
-  input
-    margin-top: 20px
-    margin-left: 70px
-  li
-    float: left
-    list-style-type: none
-    display: block
-    a.on
-      color: white
-  .texto-menu
-    font-size: 20px
-    color: #A4DC22
-    font-weight: lighter
-  .on
-    text-decoration: none
-
-#inferior
-  height: 520px
-  width: 1260px
-  z-index: 2
-  position: absolute
+@import layout
 
 #izquierda
   height: 500px
@@ -119,8 +38,8 @@ body
   width: 450px
   top: 0
   left: 0
-  margin-top: 40px
-  margin-left: 100px
+  margin-top: 10px
+  margin-left: 60px
 
 #contacto-titulo, #contacto-mail, #contacto-informacion
   color: #FFFFFF
@@ -128,8 +47,8 @@ body
 
 #contacto-titulo
   font-size: 26px
-  margin-top: 20px
-  margin-bottom: 50px
+  margin-top: 50px
+  margin-bottom: 20px
 
 #contacto-mail
   color: #7EFFFF
@@ -163,12 +82,11 @@ body
 
 #contacto-formulario
   height: 450px
-  margin-top: 32px
   width: 400px
   position: absolute
   height: 0px
   left: 0px
-  input, textarea
+  input, textarea, select
     margin-left: 50px
     margin-top: 10px
     height: 24px
@@ -177,7 +95,7 @@ body
   p.formulario
     color: #FFFFFF
     margin-left: 50px
-    margin-top: 25px
+    margin-top: 15px
 
 #formulario-mensaje
   width: 400px
@@ -187,3 +105,6 @@ body
 #contacto-formulario button
   float: right
   margin-top: 10px
+
+#dirigido
+  width: 400px

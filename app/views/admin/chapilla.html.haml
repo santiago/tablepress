@@ -26,8 +26,8 @@
         %p.label Tipo de Producto
         %select
           %option{:value=>"chapilla"} Chapilla
-          %option{:value=>"tablero"} Tablero
-          %option{:value=>"canto"} Canto
+          // %option{:value=>"tablero"} Tablero
+          // %option{:value=>"canto"} Canto
       .especificaciones.edit
         %p.label Especificaciones
         %ul
@@ -50,7 +50,7 @@
           %p Producto activo
         - unless @product.new_record?
           .eliminar
-            %a{:href=>""} Eliminar producto
+            = link_to 'Eliminar producto', @product, :confirm => 'Está seguro?', :method => :delete
 
     #guardar-producto
       %a{:href=>"#"} Guardar producto

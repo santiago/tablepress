@@ -6,33 +6,22 @@
     position: absolute
     z-index: 2000
 
-#beneficios
-  background: url("/images/pestana-beneficios.png") no-repeat 0 0 transparent
-  position: relative
-  height: 80px
-  width: 250px
-  top: 62px
-  left: 950px
-  z-index: 4
-
-#link-beneficios
-  color: #FFFFFF
-  font-size: 18px
-  position: absolute
-  top: 4px
-  left: 65px
-
-#tab-beneficios
-  background: url("/images/pestana-beneficios") no-repeat 0 0 transparent
-
 #productos-lista
-  // position: relative
+  position: absolute
   z-index: 4
-  left: 489px
+  // left: 489px
   // height: 220px
   width: 100px
   li.first
     margin-top: 70px
+  z-index: 10
+
+#desplegable-fondo
+  position: absolute
+  z-index: 1000
+  top: 0px
+  left: 22px
+  width: 141px
   .centro
     background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent
     height: 200px
@@ -40,14 +29,6 @@
   .bottom
     background: url("/images/desplegable-bottom.png") no-repeat 0 0 transparent
     width: 143px
-
-
-#desplegable-fondo
-  position: absolute
-  z-index: 1000
-  top: 8px
-  left: 490px
-  width: 141px
 
 #desplegable-fondo .seleccionado
   height: 35px
@@ -57,7 +38,7 @@
   position: absolute
   top: 77px
   left: 0px
-  z-index: -1
+  z-index: 1
 
 #productos-lista .menu-desplegable
   color: #FFFFFF

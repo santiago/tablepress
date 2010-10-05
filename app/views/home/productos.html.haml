@@ -13,23 +13,33 @@
 #derecha
   #galeria
     #flecha-izq
-      %span <
+      %p.prev &nbsp;
     #contenido-galeria
-      - (@products.size.div(8)+1).times do |i|
-        .lista-container
-          %ul.lista-thumbs{:style=>"#{i>0 ? 'display:none' : nil}"}
-            - j=0
-            - @products[i*4..((4*(i+1))-1)].each do |product|
-              - j= j+1
-              %li.thumb{:id=>"product-#{product.id}", :class=>"#{j.modulo(4)==0 ? 'last' : nil}"}
-                %a{:href => "#"} 
-                  %img{:src=>"/images/products/#{product.thumb_image}"}
+      .scrollable
+        .items
+          - containers= @products.size.modulo(6)==0 ? @products.size.div(6) : @products.size.div(6)+1
+          - (containers).times do |i|
+            .lista-container
+              - 2.times do |j|
+                %ul.lista-thumbs
+                  - 3.times do |k|
+                    - product= @products[(i*6)+(j*3)+k]
+                    - if !product
+                      - break
+                    %li.thumb{:id=>"product-#{product.id}", :class=>"#{k==2 ? 'last' : nil}"}
+                      %a{:href => "#"} 
+                        %img{:src=>"/images/products/#{product.thumb_image}"}          
+
     #flecha-der
-      %span >
+      %p.next &nbsp;
   #descripcion
     .info
       %h2 Chapilla madera decorativa
-      %p Para aplicaciones en acabados tales como cantos u otros, ofrecemos nuestra variedad de chapilla en diferentes especiescomo complemento ideal para el ebanista o carpintero en hojasde 250 x 64 cm y cantos prefabricados.
+      %p 
+        Para aplicaciones en acabados tales como cantos u otros,
+        ofrecemos nuestra variedad de chapilla en diferentes
+        especies como complemento ideal para el ebanista o carpintero en
+        hojas de 250 x 64 cm y cantos prefabricados.
     #especs{:style => "display:none"}
       .spec 
         %p.label Ancho
@@ -65,7 +75,11 @@
           %p#codigo-zoom #{product.code}
 
 =content_for(:javascripts) do
+  = jquery_plugin "tools/jquery.tools.min"
   = javascript_include_tag "app"
+  :javascript
+    $("#galeria .scrollable").scrollable();
+
 
 =content_for(:stylesheets) do
   = stylesheet_link_tag 'css/styles.css', :media => 'screen'

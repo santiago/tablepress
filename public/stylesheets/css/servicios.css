@@ -1,125 +1,122 @@
-/* line 1, ../../../app/stylesheets/servicios.sass */
+/* line 1, ../../../app/stylesheets/layout.sass */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 5, ../../../app/stylesheets/servicios.sass */
+/* line 5, ../../../app/stylesheets/layout.sass */
 body {
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
   background-color: #eeeeee;
   height: 100%;
   overflow: hidden;
   width: 100%;
-  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 12, ../../../app/stylesheets/servicios.sass */
+/* line 12, ../../../app/stylesheets/layout.sass */
 #background {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: 0;
+  z-index: -1;
 }
 
-/* line 20, ../../../app/stylesheets/servicios.sass */
+/* line 20, ../../../app/stylesheets/layout.sass */
 .stretch {
   width: 100%;
   height: 100%;
 }
 
-/* line 24, ../../../app/stylesheets/servicios.sass */
+/* line 24, ../../../app/stylesheets/layout.sass */
 #wrap {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* line 29, ../../../app/stylesheets/servicios.sass */
+/* line 29, ../../../app/stylesheets/layout.sass */
 #superior {
   height: 50px;
   width: 100%;
   position: relative;
 }
 
-/* line 34, ../../../app/stylesheets/servicios.sass */
+/* line 34, ../../../app/stylesheets/layout.sass */
 #menu {
   background-color: #41660f;
-  height: 55px;
+  height: 70px;
   width: 100%;
-  position: relative;
   margin-top: 8px;
-  z-index: 1;
   float: left;
 }
 
-/* line 43, ../../../app/stylesheets/servicios.sass */
+/* line 41, ../../../app/stylesheets/layout.sass */
 #logo {
   background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
   height: 60px;
-  width: 180px;
-  margin-left: 45px;
-  position: relative;
-  margin-top: 7px;
+  width: 250px;
+  margin-left: 70px;
+  margin-top: 8px;
   float: left;
 }
 
-/* line 52, ../../../app/stylesheets/servicios.sass */
-#inicio, #empresa, #productos, #servicios, #contactenos {
-  position: relative;
-  margin-left: 50px;
+/* line 49, ../../../app/stylesheets/layout.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos, #beneficios {
+  margin-left: 43px;
   float: left;
-  width: -1px;
   display: block;
-  margin-top: 15px;
+  margin-top: 25px;
   text-decoration: none;
 }
 
-/* line 62, ../../../app/stylesheets/servicios.sass */
+/* line 57, ../../../app/stylesheets/layout.sass */
 #menu input {
   margin-top: 20px;
   margin-left: 70px;
 }
-/* line 65, ../../../app/stylesheets/servicios.sass */
+/* line 60, ../../../app/stylesheets/layout.sass */
 #menu li {
   float: left;
   list-style-type: none;
   display: block;
 }
-/* line 69, ../../../app/stylesheets/servicios.sass */
+/* line 64, ../../../app/stylesheets/layout.sass */
 #menu li a.on {
   color: white;
 }
-/* line 71, ../../../app/stylesheets/servicios.sass */
+/* line 66, ../../../app/stylesheets/layout.sass */
 #menu .texto-menu {
   font-family: verdana;
   font-size: 20px;
   color: #a4dc22;
   font-weight: lighter;
 }
-/* line 76, ../../../app/stylesheets/servicios.sass */
+/* line 71, ../../../app/stylesheets/layout.sass */
 #menu .on {
   text-decoration: none;
 }
+/* line 74, ../../../app/stylesheets/layout.sass */
+#menu #beneficios {
+  color: #ffb100;
+  font-size: 26px;
+  margin-top: 20px;
+}
 
-/* line 79, ../../../app/stylesheets/servicios.sass */
+/* line 79, ../../../app/stylesheets/layout.sass */
 #inferior {
-  height: 520px;
-  width: 1260px;
-  z-index: 2;
-  position: absolute;
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-/* line 85, ../../../app/stylesheets/servicios.sass */
-#izquierda {
-  height: 500px;
-  width: 600px;
-  margin-left: 20px;
-  float: left;
+/* line 84, ../../../app/stylesheets/layout.sass */
+#productos-item {
+  position: relative;
 }
 
-/* line 91, ../../../app/stylesheets/servicios.sass */
+/* line 4, ../../../app/stylesheets/servicios.sass */
 #izquierda-fondo {
   position: absolute;
   width: 550px;
@@ -127,35 +124,43 @@ body {
   float: left;
 }
 
-/* line 98, ../../../app/stylesheets/servicios.sass */
+/* line 10, ../../../app/stylesheets/servicios.sass */
+#izquierda {
+  height: 500px;
+  width: 600px;
+  margin-left: 20px;
+  float: left;
+}
+
+/* line 17, ../../../app/stylesheets/servicios.sass */
 #izquierda .top {
   background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
   height: 50px;
   margin-top: 10px;
 }
-/* line 102, ../../../app/stylesheets/servicios.sass */
+/* line 21, ../../../app/stylesheets/servicios.sass */
 #izquierda .centro {
   background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
   height: 435px;
 }
-/* line 105, ../../../app/stylesheets/servicios.sass */
+/* line 24, ../../../app/stylesheets/servicios.sass */
 #izquierda .bottom {
   background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
   height: 55px;
 }
 
-/* line 109, ../../../app/stylesheets/servicios.sass */
+/* line 28, ../../../app/stylesheets/servicios.sass */
 #contenido-zoom {
   height: 500px;
   float: left;
   position: absolute;
   width: 520px;
-  top: 0;
-  left: 0;
+  top: 75px;
+  left: 60px;
   margin-top: 50px;
 }
 
-/* line 118, ../../../app/stylesheets/servicios.sass */
+/* line 37, ../../../app/stylesheets/servicios.sass */
 #zoom {
   background: url("/images/servicios-1-zoom.png") no-repeat 0 0 transparent;
   height: 375px;
@@ -165,172 +170,39 @@ body {
   left: 20px;
   margin: 0;
   padding: 0;
-}
-
-/* line 128, ../../../app/stylesheets/servicios.sass */
-body {
-  background-color: #eeeeee;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
-}
-
-/* line 135, ../../../app/stylesheets/servicios.sass */
-#background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 0;
-}
-
-/* line 143, ../../../app/stylesheets/servicios.sass */
-.stretch {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 147, ../../../app/stylesheets/servicios.sass */
-#wrap {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-/* line 152, ../../../app/stylesheets/servicios.sass */
-#superior {
-  height: 50px;
-  width: 100%;
-  position: relative;
-}
-
-/* line 157, ../../../app/stylesheets/servicios.sass */
-#menu {
-  background-color: #41660f;
-  height: 55px;
-  width: 100%;
-  position: relative;
-  margin-top: 8px;
-  z-index: 1;
-  float: left;
-}
-
-/* line 166, ../../../app/stylesheets/servicios.sass */
-#logo {
-  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
-  height: 60px;
-  width: 180px;
-  margin-left: 45px;
-  position: relative;
-  margin-top: 7px;
-  float: left;
-}
-
-/* line 175, ../../../app/stylesheets/servicios.sass */
-#inicio, #empresa, #productos, #servicios, #contactenos {
-  position: relative;
-  margin-left: 50px;
-  float: left;
-  width: -1px;
-  display: block;
-  margin-top: 15px;
-  text-decoration: none;
-}
-
-/* line 185, ../../../app/stylesheets/servicios.sass */
-#menu input {
-  margin-top: 20px;
-  margin-left: 70px;
-}
-/* line 188, ../../../app/stylesheets/servicios.sass */
-#menu li {
-  float: left;
-  list-style-type: none;
-  display: block;
-}
-/* line 192, ../../../app/stylesheets/servicios.sass */
-#menu li a.on p {
-  color: white;
-}
-/* line 194, ../../../app/stylesheets/servicios.sass */
-#menu .texto-menu {
-  font-family: verdana;
-  font-size: 20px;
-  color: #a4dc22;
-  font-weight: lighter;
-}
-/* line 199, ../../../app/stylesheets/servicios.sass */
-#menu .on {
-  text-decoration: none;
-}
-
-/* line 202, ../../../app/stylesheets/servicios.sass */
-#inferior {
-  height: 520px;
-  width: 1260px;
-  z-index: 2;
-  position: absolute;
-}
-
-/* line 208, ../../../app/stylesheets/servicios.sass */
-#izquierda {
-  height: 500px;
-  width: 600px;
-  margin-left: 20px;
-  float: left;
-}
-
-/* line 214, ../../../app/stylesheets/servicios.sass */
-#izquierda-fondo {
-  position: absolute;
-  width: 550px;
-  z-index: 3;
-  float: left;
-}
-
-/* line 221, ../../../app/stylesheets/servicios.sass */
-#izquierda .top {
-  background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
-  height: 50px;
-  margin-top: 10px;
-}
-/* line 225, ../../../app/stylesheets/servicios.sass */
-#izquierda .centro {
-  background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
-  height: 435px;
-}
-/* line 228, ../../../app/stylesheets/servicios.sass */
-#izquierda .bottom {
-  background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
-  height: 55px;
-}
-
-/* line 232, ../../../app/stylesheets/servicios.sass */
-#contenido-zoom {
-  height: 500px;
-  float: left;
-  position: absolute;
-  width: 520px;
-  top: 0;
-  left: 0;
-  margin-top: 50px;
-}
-
-/* line 241, ../../../app/stylesheets/servicios.sass */
-#zoom {
-  background: url("/images/servicios-1-zoom.png") no-repeat 0 0 transparent;
-  height: 375px;
-  position: absolute;
-  width: 450px;
   top: 0;
   left: 0;
   margin-top: 10px;
   margin-left: 36px;
 }
 
-/* line 251, ../../../app/stylesheets/servicios.sass */
+/* line 52, ../../../app/stylesheets/servicios.sass */
+#contenido-zoom .nombre-producto {
+  height: 150px;
+  position: relative;
+  width: 450px;
+  top: 392px;
+  left: 40px;
+}
+
+/* line 59, ../../../app/stylesheets/servicios.sass */
+#nombre-zoom {
+  font-family: verdana;
+  color: white;
+  font-size: 24px;
+}
+
+/* line 64, ../../../app/stylesheets/servicios.sass */
+#derecha {
+  height: 500px;
+  width: 470px;
+  float: left;
+  position: relative;
+  z-index: 3;
+  margin-left: 60px;
+}
+
+/* line 72, ../../../app/stylesheets/servicios.sass */
 #icono-hoja {
   background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
   height: 50px;
@@ -341,116 +213,19 @@ body {
   margin-right: 35px;
 }
 
-/* line 260, ../../../app/stylesheets/servicios.sass */
-#contenido-zoom .nombre-producto {
-  height: 150px;
-  position: relative;
-  width: 450px;
-  top: 392px;
-  left: 40px;
-}
-
-/* line 267, ../../../app/stylesheets/servicios.sass */
-#nombre-zoom {
-  font-family: verdana;
-  color: white;
-  font-size: 24px;
-}
-
-/* line 272, ../../../app/stylesheets/servicios.sass */
-#derecha {
-  height: 500px;
-  width: 470px;
-  float: left;
-  position: relative;
-  z-index: 3;
-  margin-left: 60px;
-}
-
-/* line 280, ../../../app/stylesheets/servicios.sass */
-#fotos servicios a {
-  float: left;
-}
-
-/* line 283, ../../../app/stylesheets/servicios.sass */
-#fondo-derecha {
-  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
-  height: 300px;
-  position: relative;
-  margin-top: 158px;
-}
-
-/* line 289, ../../../app/stylesheets/servicios.sass */
-#servicios-texto {
-  color: #f8fcdd;
-  line-height: 1.6em;
-  width: 390px;
-  margin-top: 250px;
-  margin-left: 25px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  text-align: justify;
-  font-size: 14px;
-}
-/* line 300, ../../../app/stylesheets/servicios.sass */
-#servicios-texto b {
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
-  margin-left: 36px;
-}
-
-/* line 306, ../../../app/stylesheets/servicios.sass */
-#icono-hoja {
-  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  float: right;
-  top: 405px;
-  margin-right: 35px;
-}
-
-/* line 315, ../../../app/stylesheets/servicios.sass */
-#contenido-zoom .nombre-producto {
-  height: 150px;
-  position: relative;
-  width: 450px;
-  top: 392px;
-  left: 40px;
-}
-
-/* line 322, ../../../app/stylesheets/servicios.sass */
-#nombre-zoom {
-  font-family: verdana;
-  color: white;
-  font-size: 24px;
-}
-
-/* line 327, ../../../app/stylesheets/servicios.sass */
-#derecha {
-  height: 500px;
-  width: 470px;
-  float: left;
-  position: relative;
-  z-index: 3;
-  margin-left: 60px;
-}
-
-/* line 335, ../../../app/stylesheets/servicios.sass */
+/* line 81, ../../../app/stylesheets/servicios.sass */
 #fotos-servicios a {
   float: left;
   margin-top: 32px;
   margin-right: 15px;
   display: block;
 }
-/* line 340, ../../../app/stylesheets/servicios.sass */
+/* line 86, ../../../app/stylesheets/servicios.sass */
 #fotos-servicios a img {
   border: 0px;
 }
 
-/* line 343, ../../../app/stylesheets/servicios.sass */
+/* line 89, ../../../app/stylesheets/servicios.sass */
 #fondo-derecha {
   background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
   height: 300px;
@@ -458,7 +233,7 @@ body {
   margin-top: 228px;
 }
 
-/* line 349, ../../../app/stylesheets/servicios.sass */
+/* line 95, ../../../app/stylesheets/servicios.sass */
 #servicios-texto {
   color: #f8fcdd;
   line-height: 1.6em;
@@ -471,9 +246,10 @@ body {
   text-align: justify;
   font-size: 14px;
 }
-/* line 360, ../../../app/stylesheets/servicios.sass */
+/* line 106, ../../../app/stylesheets/servicios.sass */
 #servicios-texto b {
   font-size: 18px;
   color: white;
   margin-bottom: 10px;
+  margin-left: 36px;
 }

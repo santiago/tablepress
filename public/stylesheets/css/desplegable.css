@@ -10,62 +10,38 @@
 }
 
 /* line 9, ../../../app/stylesheets/desplegable.sass */
-#beneficios {
-  background: url("/images/pestana-beneficios.png") no-repeat 0 0 transparent;
-  position: relative;
-  height: 80px;
-  width: 250px;
-  top: 62px;
-  left: 950px;
-  z-index: 4;
-}
-
-/* line 18, ../../../app/stylesheets/desplegable.sass */
-#link-beneficios {
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  top: 4px;
-  left: 65px;
-}
-
-/* line 25, ../../../app/stylesheets/desplegable.sass */
-#tab-beneficios {
-  background: url("/images/pestana-beneficios") no-repeat 0 0 transparent;
-}
-
-/* line 28, ../../../app/stylesheets/desplegable.sass */
 #productos-lista {
+  position: absolute;
   z-index: 4;
-  left: 489px;
   width: 100px;
+  z-index: 10;
 }
-/* line 34, ../../../app/stylesheets/desplegable.sass */
+/* line 15, ../../../app/stylesheets/desplegable.sass */
 #productos-lista li.first {
   margin-top: 70px;
 }
-/* line 36, ../../../app/stylesheets/desplegable.sass */
-#productos-lista .centro {
+
+/* line 19, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 22px;
+  width: 141px;
+}
+/* line 25, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .centro {
   background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent;
   height: 200px;
   width: 143px;
 }
-/* line 40, ../../../app/stylesheets/desplegable.sass */
-#productos-lista .bottom {
+/* line 29, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .bottom {
   background: url("/images/desplegable-bottom.png") no-repeat 0 0 transparent;
   width: 143px;
 }
 
-/* line 45, ../../../app/stylesheets/desplegable.sass */
-#desplegable-fondo {
-  position: absolute;
-  z-index: 1000;
-  top: 8px;
-  left: 490px;
-  width: 141px;
-}
-
-/* line 52, ../../../app/stylesheets/desplegable.sass */
+/* line 33, ../../../app/stylesheets/desplegable.sass */
 #desplegable-fondo .seleccionado {
   height: 35px;
   width: 141px;
@@ -74,10 +50,10 @@
   position: absolute;
   top: 77px;
   left: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 
-/* line 62, ../../../app/stylesheets/desplegable.sass */
+/* line 43, ../../../app/stylesheets/desplegable.sass */
 #productos-lista .menu-desplegable {
   color: white;
   z-index: 5;

@@ -6,19 +6,21 @@
   height: 220px;
   width: 100px;
 }
-/* line 7, ../../../app/stylesheets/menu_productos.sass */
-#productos-lista .centro {
-  background: url("../images/pixel-desplegable.png") repeat-y 0 0 transparent;
+
+/* line 8, ../../../app/stylesheets/menu_productos.sass */
+.centro {
+  background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent;
   height: 200px;
   width: 143px;
 }
-/* line 11, ../../../app/stylesheets/menu_productos.sass */
-#productos-lista .bottom {
-  background: url("../images/desplegable-bottom.png") no-repeat 0 0 transparent;
+
+/* line 12, ../../../app/stylesheets/menu_productos.sass */
+.bottom {
+  background: url("/images/desplegable-bottom.png") no-repeat 0 0 transparent;
   width: 143px;
 }
 
-/* line 15, ../../../app/stylesheets/menu_productos.sass */
+/* line 16, ../../../app/stylesheets/menu_productos.sass */
 #desplegable-fondo .seleccionado {
   height: 35px;
   width: 141px;
@@ -30,7 +32,7 @@
   z-index: 4;
 }
 
-/* line 25, ../../../app/stylesheets/menu_productos.sass */
+/* line 26, ../../../app/stylesheets/menu_productos.sass */
 #productos-lista .menu-desplegable {
   color: white;
   z-index: 5;

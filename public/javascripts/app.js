@@ -18,6 +18,8 @@ jQuery(document).ready(function($) {
 		$("#contenido-zoom").html(html);
 		e.preventDefault();
 	    });
+
+	    $el.find("li.thumb a").first().click();
 	},
 	_show_product: function() {
 	}

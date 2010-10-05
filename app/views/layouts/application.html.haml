@@ -21,19 +21,16 @@
                   %a.menu-desplegable{:href => "/productos/cantos"} cantos
                 %li
                   %a.menu-desplegable{:href => "/productos/tableros#"} tableros
-                .centro &nbsp;
-                .bottom &nbsp;
-                .seleccionado &nbsp;
+              .centro &nbsp;
+              .bottom &nbsp;
+              .seleccionado &nbsp;
 
-          // %li
-          //  %a#servicios.texto-menu{:href => "/home/servicios", :class=>"#{@at=='servicios' ? 'on' : nil}"} servicios
+          %li
+            %a#servicios.texto-menu{:href => "/home/servicios", :class=>"#{@at=='servicios' ? 'on' : nil}"} servicios
           %li
             %a#contactenos.texto-menu{:href => "/home/contacto", :class=>"#{@at=='contacto' ? 'on' : nil}"} cont&aacute;ctenos
           %li
-            %input{:type => "text", :value => "buscar"}/
-            %button buscar
-        #beneficios
-          %a#link-beneficios{:href => "/home/beneficios"} beneficios
+            %a#beneficios.texto-menu{:href => "/home/beneficios", :class=>"#{@at=='beneficios' ? 'on' : nil}"} beneficios
       #inferior
         = yield :layout
     #background

@@ -1,10 +1,10 @@
-/* line 1, ../../../app/stylesheets/empresa.sass */
+/* line 1, ../../../app/stylesheets/layout.sass */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 5, ../../../app/stylesheets/empresa.sass */
+/* line 5, ../../../app/stylesheets/layout.sass */
 body {
   font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
   background-color: #eeeeee;
@@ -13,7 +13,7 @@ body {
   width: 100%;
 }
 
-/* line 12, ../../../app/stylesheets/empresa.sass */
+/* line 12, ../../../app/stylesheets/layout.sass */
 #background {
   width: 100%;
   height: 100%;
@@ -23,86 +23,100 @@ body {
   z-index: -1;
 }
 
-/* line 20, ../../../app/stylesheets/empresa.sass */
+/* line 20, ../../../app/stylesheets/layout.sass */
 .stretch {
   width: 100%;
   height: 100%;
 }
 
-/* line 24, ../../../app/stylesheets/empresa.sass */
+/* line 24, ../../../app/stylesheets/layout.sass */
 #wrap {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* line 29, ../../../app/stylesheets/empresa.sass */
+/* line 29, ../../../app/stylesheets/layout.sass */
 #superior {
   height: 50px;
   width: 100%;
   position: relative;
 }
 
-/* line 34, ../../../app/stylesheets/empresa.sass */
+/* line 34, ../../../app/stylesheets/layout.sass */
 #menu {
   background-color: #41660f;
-  height: 55px;
+  height: 70px;
   width: 100%;
   margin-top: 8px;
-  z-index: 1;
   float: left;
 }
 
-/* line 43, ../../../app/stylesheets/empresa.sass */
+/* line 41, ../../../app/stylesheets/layout.sass */
 #logo {
   background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent;
   height: 60px;
-  width: 180px;
-  margin-left: 45px;
-  position: relative;
-  margin-top: 7px;
+  width: 250px;
+  margin-left: 70px;
+  margin-top: 8px;
   float: left;
 }
 
-/* line 52, ../../../app/stylesheets/empresa.sass */
-#inicio, #empresa, #productos, #servicios, #contactenos {
-  position: relative;
-  margin-left: 50px;
+/* line 49, ../../../app/stylesheets/layout.sass */
+#inicio, #empresa, #productos, #servicios, #contactenos, #beneficios {
+  margin-left: 43px;
   float: left;
-  width: -1px;
   display: block;
-  margin-top: 15px;
+  margin-top: 25px;
   text-decoration: none;
 }
 
-/* line 62, ../../../app/stylesheets/empresa.sass */
+/* line 57, ../../../app/stylesheets/layout.sass */
 #menu input {
   margin-top: 20px;
   margin-left: 70px;
 }
-/* line 65, ../../../app/stylesheets/empresa.sass */
+/* line 60, ../../../app/stylesheets/layout.sass */
 #menu li {
   float: left;
   list-style-type: none;
   display: block;
 }
-/* line 69, ../../../app/stylesheets/empresa.sass */
+/* line 64, ../../../app/stylesheets/layout.sass */
 #menu li a.on {
   color: white;
 }
-/* line 71, ../../../app/stylesheets/empresa.sass */
+/* line 66, ../../../app/stylesheets/layout.sass */
 #menu .texto-menu {
   font-family: verdana;
   font-size: 20px;
   color: #a4dc22;
   font-weight: lighter;
 }
-/* line 76, ../../../app/stylesheets/empresa.sass */
+/* line 71, ../../../app/stylesheets/layout.sass */
 #menu .on {
   text-decoration: none;
 }
+/* line 74, ../../../app/stylesheets/layout.sass */
+#menu #beneficios {
+  color: #ffb100;
+  font-size: 26px;
+  margin-top: 20px;
+}
 
-/* line 79, ../../../app/stylesheets/empresa.sass */
+/* line 79, ../../../app/stylesheets/layout.sass */
+#inferior {
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 84, ../../../app/stylesheets/layout.sass */
+#productos-item {
+  position: relative;
+}
+
+/* line 3, ../../../app/stylesheets/empresa.sass */
 #inferior {
   height: 520px;
   width: 1260px;
@@ -110,25 +124,47 @@ body {
   position: absolute;
 }
 
-/* line 85, ../../../app/stylesheets/empresa.sass */
+/* line 9, ../../../app/stylesheets/empresa.sass */
 #izquierda {
   height: 500px;
-  width: 600px;
-  margin-left: 20px;
+  width: 550px;
+  margin-left: 50px;
   float: left;
+  margin-top: 60px;
+}
+/* line 15, ../../../app/stylesheets/empresa.sass */
+#izquierda .top {
+  background: url("/images/fondo-izquierda-top.png") no-repeat scroll 0 0 transparent;
+  width: 700px;
+  height: 55px;
+}
+/* line 19, ../../../app/stylesheets/empresa.sass */
+#izquierda .centro {
+  background: url("/images/fondo-izquierda-centro.png") repeat-y scroll 0 0 transparent;
+  height: 370px;
+  width: 700px;
+}
+/* line 23, ../../../app/stylesheets/empresa.sass */
+#izquierda .bottom {
+  background: url("/images/fondo-izquierda-bottom.png") no-repeat scroll 0 0 transparent;
+  height: 55px;
+  width: 700px;
 }
 
-/* line 91, ../../../app/stylesheets/empresa.sass */
+/* line 28, ../../../app/stylesheets/empresa.sass */
 #foto-empresa {
-  background: url("/images/foto-empresa.png") no-repeat 0 0 transparent;
+  background: url("/images/foto-empresa-2.png") no-repeat 0 0 transparent;
   height: 500px;
   width: 800px;
   z-index: 3;
-  margin-top: 45px;
-  margin-left: 26px;
+  margin-top: 80px;
+  margin-left: 80px;
+  position: absolute;
+  top: 20px;
+  left: 9px;
 }
 
-/* line 99, ../../../app/stylesheets/empresa.sass */
+/* line 39, ../../../app/stylesheets/empresa.sass */
 #derecha {
   height: 500px;
   width: 400px;
@@ -136,28 +172,29 @@ body {
   float: left;
   margin-left: 220px;
   position: relative;
+  margin-top: 35px;
 }
-/* line 106, ../../../app/stylesheets/empresa.sass */
+/* line 47, ../../../app/stylesheets/empresa.sass */
 #derecha .top {
   background: url("/images/fondo-superior-leyenda-empresa.png") no-repeat 0 0 transparent;
-  height: 73px;
+  height: 70px;
   margin-top: 45px;
 }
-/* line 110, ../../../app/stylesheets/empresa.sass */
+/* line 51, ../../../app/stylesheets/empresa.sass */
 #derecha .centro {
   background: url("/images/pixel-leyenda-empresa.png") repeat-y 0 0 transparent;
-  height: 380px;
+  height: 320px;
 }
-/* line 113, ../../../app/stylesheets/empresa.sass */
+/* line 54, ../../../app/stylesheets/empresa.sass */
 #derecha .bottom {
   background: url("/images/fondo-inferior-leyenda-empresa.png") no-repeat 0 0 transparent;
   height: 50px;
 }
 
-/* line 117, ../../../app/stylesheets/empresa.sass */
+/* line 58, ../../../app/stylesheets/empresa.sass */
 #contenido-empresa {
   width: 290px;
-  height: 390px;
+  height: 340px;
   position: absolute;
   top: 125px;
   left: 22px;

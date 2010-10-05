@@ -2,16 +2,18 @@
 
 $derecha_width: 480px
 
+#izquierda
+  height: 500px
+  width: 560px
+  margin-left: 40px
+  float: left
+
 #izquierda-fondo
-  position: relative
+  position: absolute
   width: 550px
-  z-index: 0
+  z-index: 3
 
 #izquierda
-  float: left
-  height: 500px
-  width: 600px
-  margin-left: 50px
   .top
     background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent
     height: 50px
@@ -24,15 +26,21 @@ $derecha_width: 480px
     height: 55px
 
 #contenido-zoom
+  height: 500px
+  float: left
   position: absolute
   width: 520px
-  top: 40px
+  top: 0
   left: 0
-  z-index: 0
+  margin-top: 50px
 
 #zoom
+  // background: url("/images/cantos-2.png") no-repeat 0 0 transparent
   height: 375px
+  position: absolute
   width: 450px
+  top: 0
+  left: 0
   margin-top: 10px
   margin-left: 36px
 
@@ -40,24 +48,54 @@ $derecha_width: 480px
   background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent
   height: 50px
   width: 50px
+  position: relative
   float: right
+  top: 405px
   margin-right: 35px
-  margin-top: 20px
 
 #contenido-zoom .nombre-producto
-  margin-left: 35px
+  height: 150px
+  position: relative
+  width: 450px
+  top: 392px
+  left: 40px
 
-#nombre-zoom
+#nombre-zoom, #codigo-zoom
   font-family: verdana
   color: #FFFFFF
   font-size: 24px
 
-#codigo-zoom
-  font-family: verdana
-  color: #FFFFFF
-  font-size: 24px
-  font-size: 20px
-  margin-top: 10px
+#derecha
+  height: 500px
+  width: 470px
+  float: left
+  position: relative
+  z-index: 3
+  margin-left: 60px
+
+#fondo-derecha
+  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent
+  height: 350px
+  margin-top: 120px
+  position: relative
+
+#texto-cantos-tableros, #texto-tableros
+  color: #F8FCDD
+  line-height: 1.6em
+  width: 390px
+  margin-top: 165px
+  margin-left: 25px
+  position: absolute
+  top: 0px
+  left: 0px
+  text-align: justify
+  font-size: 16px
+  b
+    font-size: 18px
+    color: #FFFFFF
+
+#texto-tableros
+  margin-top: 140px
 
 #derecha
   float: left
@@ -67,50 +105,7 @@ $derecha_width: 480px
   margin-top: 35px
   border: 2px dashed black
 
-#flecha-izq, #flecha-der, #contenido-galeria
-  float: left
-
-#flecha-izq, #flecha-der
-  color: white
-  font-size: 35px
-  font-weight: 900
-  padding: 74px 24px 0px
-  width: 21px
-  height: 36px
-  p
-    width: 21px
-    height: 36px
-    cursor: pointer
-
-#flecha-izq p
-  background: url(/images/flecha-izquierda.png) no-repeat 0 0
-
-#flecha-der p
-  background: url(/images/flecha-derecha.png) no-repeat 0 0
-
-#galeria
-  margin-top: 25px
-
-#contenido-galeria
-  width: 340px
-
-.lista-thumbs
-  float: left
-
 #derecha
-  .lista-container
-    width: 340px
-    height: 200px
-    float: left
-    margin: 0 10px
-  .scrollable
-    position: relative
-    overflow: hidden
-    height: 200px
-    width: 340px
-    .items
-      width: 2000em
-      position: absolute
   .lista-thumbs .thumb
     width: 100px
     height: 83px
@@ -159,7 +154,7 @@ $derecha_width: 480px
   left: 0
   background: url(/images/pixel-productos-info.png) repeat-y 0 0
   color: white
-  height: 235px
+  height: 340px
   width: 100%
   overflow: auto
   p
@@ -177,7 +172,7 @@ $derecha_width: 480px
         padding: 3px
       &.dato-1, &.dato-2
         text-align: right
-        width: 40%
+        // width: 40%
         margin: 5px 25px 10px 20px
       &.dato-1
         float: left

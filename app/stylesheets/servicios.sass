@@ -1,97 +1,16 @@
-*
-  margin: 0
-  padding: 0
+@import layout
 
-body
-  background-color: #EEEEEE
-  height: 100%
-  overflow: hidden
-  width: 100%
-  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
-
-#background
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0px
-  top: 0px
-  z-index: 0
-
-.stretch
-  width: 100%
-  height: 100%
-
-#wrap
-  height: 100%
-  width: 100%
-  position: relative
-
-#superior
-  height: 50px
-  width: 100%
-  position: relative
-
-#menu
-  background-color: #41660F
-  height: 55px
-  width: 100%
-  position: relative
-  margin-top: 8px
-  z-index: 1
-  float: left
-
-#logo
-  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent
-  height: 60px
-  width: 180px
-  margin-left: 45px
-  position: relative
-  margin-top: 7px
-  float: left
-
-#inicio, #empresa, #productos, #servicios, #contactenos
-  position: relative
-  margin-left: 50px
-  float: left
-  width: -1px
-  display: block
-  margin-top: 15px
-  text-decoration: none
-
-#menu
-  input
-    margin-top: 20px
-    margin-left: 70px
-  li
-    float: left
-    list-style-type: none
-    display: block
-    a.on
-      color: white
-  .texto-menu
-    font-family: verdana
-    font-size: 20px
-    color: #A4DC22
-    font-weight: lighter
-  .on
-    text-decoration: none
-
-#inferior
-  height: 520px
-  width: 1260px
-  z-index: 2
-  position: absolute
-
-#izquierda
-  height: 500px
-  width: 600px
-  margin-left: 20px
-  float: left
 
 #izquierda-fondo
   position: absolute
   width: 550px
   z-index: 3
+  float: left
+
+#izquierda
+  height: 500px
+  width: 600px
+  margin-left: 20px
   float: left
 
 #izquierda
@@ -111,8 +30,8 @@ body
   float: left
   position: absolute
   width: 520px
-  top: 0
-  left: 0
+  top: 75px
+  left: 60px
   margin-top: 50px
 
 #zoom
@@ -125,138 +44,11 @@ body
   margin: 0
   padding: 0
 
-body
-  background-color: #EEEEEE
-  height: 100%
-  overflow: hidden
-  width: 100%
-  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
-
-#background
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0px
-  top: 0px
-  z-index: 0
-
-.stretch
-  width: 100%
-  height: 100%
-
-#wrap
-  height: 100%
-  width: 100%
-  position: relative
-
-#superior
-  height: 50px
-  width: 100%
-  position: relative
-
-#menu
-  background-color: #41660F
-  height: 55px
-  width: 100%
-  position: relative
-  margin-top: 8px
-  z-index: 1
-  float: left
-
-#logo
-  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent
-  height: 60px
-  width: 180px
-  margin-left: 45px
-  position: relative
-  margin-top: 7px
-  float: left
-
-#inicio, #empresa, #productos, #servicios, #contactenos
-  position: relative
-  margin-left: 50px
-  float: left
-  width: -1px
-  display: block
-  margin-top: 15px
-  text-decoration: none
-
-#menu
-  input
-    margin-top: 20px
-    margin-left: 70px
-  li
-    float: left
-    list-style-type: none
-    display: block
-    a.on p
-      color: white
-  .texto-menu
-    font-family: verdana
-    font-size: 20px
-    color: #A4DC22
-    font-weight: lighter
-  .on
-    text-decoration: none
-
-#inferior
-  height: 520px
-  width: 1260px
-  z-index: 2
-  position: absolute
-
-#izquierda
-  height: 500px
-  width: 600px
-  margin-left: 20px
-  float: left
-
-#izquierda-fondo
-  position: absolute
-  width: 550px
-  z-index: 3
-  float: left
-
-#izquierda
-  .top
-    background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent
-    height: 50px
-    margin-top: 10px
-  .centro
-    background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent
-    height: 435px
-  .bottom
-    background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent
-    height: 55px
-
-#contenido-zoom
-  height: 500px
-  float: left
-  position: absolute
-  width: 520px
-  top: 0
-  left: 0
-  margin-top: 50px
-
-#zoom
-  background: url("/images/servicios-1-zoom.png") no-repeat 0 0 transparent
-  height: 375px
-  position: absolute
-  width: 450px
   top: 0
   left: 0
   margin-top: 10px
   margin-left: 36px
 
-#icono-hoja
-  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent
-  height: 50px
-  width: 50px
-  position: relative
-  float: right
-  top: 405px
-  margin-right: 35px
-
 #contenido-zoom .nombre-producto
   height: 150px
   position: relative
@@ -277,32 +69,6 @@ body
   z-index: 3
   margin-left: 60px
 
-#fotos servicios a
-  float: left
-
-#fondo-derecha
-  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent
-  height: 300px
-  position: relative
-  margin-top: 158px
-
-#servicios-texto
-  color: #F8FCDD
-  line-height: 1.6em
-  width: 390px
-  margin-top: 250px
-  margin-left: 25px
-  position: absolute
-  top: 0px
-  left: 0px
-  text-align: justify
-  font-size: 14px
-  b
-    font-size: 18px
-    color: #FFFFFF
-    margin-bottom: 10px
-    margin-left: 36px
-
 #icono-hoja
   background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent
   height: 50px
@@ -311,26 +77,6 @@ body
   float: right
   top: 405px
   margin-right: 35px
-
-#contenido-zoom .nombre-producto
-  height: 150px
-  position: relative
-  width: 450px
-  top: 392px
-  left: 40px
-
-#nombre-zoom
-  font-family: verdana
-  color: #FFFFFF
-  font-size: 24px
-
-#derecha
-  height: 500px
-  width: 470px
-  float: left
-  position: relative
-  z-index: 3
-  margin-left: 60px
 
 #fotos-servicios a
   float: left
@@ -361,3 +107,4 @@ body
     font-size: 18px
     color: #FFFFFF
     margin-bottom: 10px
+    margin-left: 36px

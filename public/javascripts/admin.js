@@ -109,7 +109,7 @@ $.widget("ui.product", {
 	    'auto'           : false,
 	    'multi'          : false,
 	    'buttonText'     : "click",
-	    'width'          : 75,
+	    'width'          : 100,
 	    'onSelect': onSelectThumb,
 	    'onAllComplete': onAllCompleteThumb
 	});

@@ -1,80 +1,4 @@
-*
-  margin: 0
-  padding: 0
-
-body
-  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
-  background-color: #EEEEEE
-  height: 100%
-  overflow: hidden
-  width: 100%
-
-#background
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0px
-  top: 0px
-  z-index: -1
-
-.stretch
-  width: 100%
-  height: 100%
-
-#wrap
-  height: 100%
-  width: 100%
-  position: relative
-
-#superior
-  height: 50px
-  width: 100%
-  position: relative
-
-#menu
-  background-color: #41660F
-  height: 55px
-  width: 100%
-  // position: relative
-  margin-top: 8px
-  z-index: 1
-  float: left
-
-#logo
-  background: url("/images/logo-table-press.png") no-repeat scroll 0 0 transparent
-  height: 60px
-  width: 180px
-  margin-left: 45px
-  position: relative
-  margin-top: 7px
-  float: left
-
-#inicio, #empresa, #productos, #servicios, #contactenos
-  position: relative
-  margin-left: 50px
-  float: left
-  width: -1px
-  display: block
-  margin-top: 15px
-  text-decoration: none
-
-#menu
-  input
-    margin-top: 20px
-    margin-left: 70px
-  li
-    float: left
-    list-style-type: none
-    display: block
-    a.on
-      color: white
-  .texto-menu
-    font-family: verdana
-    font-size: 20px
-    color: #A4DC22
-    font-weight: lighter
-  .on
-    text-decoration: none
+@import layout
 
 #inferior
   height: 520px
@@ -84,17 +8,33 @@ body
 
 #izquierda
   height: 500px
-  width: 600px
-  margin-left: 20px
+  width: 550px
+  margin-left: 50px
   float: left
+  margin-top: 60px
+  .top
+    background: url("/images/fondo-izquierda-top.png") no-repeat scroll 0 0 transparent
+    width: 700px
+    height: 55px
+  .centro
+    background: url("/images/fondo-izquierda-centro.png") repeat-y scroll 0 0 transparent
+    height: 370px
+    width: 700px
+  .bottom
+    background: url("/images/fondo-izquierda-bottom.png") no-repeat scroll 0 0 transparent
+    height: 55px
+    width: 700px
 
 #foto-empresa
-  background: url("/images/foto-empresa.png") no-repeat 0 0 transparent
+  background: url("/images/foto-empresa-2.png") no-repeat 0 0 transparent
   height: 500px
   width: 800px
   z-index: 3
-  margin-top: 45px
-  margin-left: 26px
+  margin-top: 80px
+  margin-left: 80px
+  position: absolute
+  top: 20px
+  left: 9px
 
 #derecha
   height: 500px
@@ -103,20 +43,21 @@ body
   float: left
   margin-left: 220px
   position: relative
+  margin-top: 35px
   .top
     background: url("/images/fondo-superior-leyenda-empresa.png") no-repeat 0 0 transparent
-    height: 73px
+    height: 70px
     margin-top: 45px
   .centro
     background: url("/images/pixel-leyenda-empresa.png") repeat-y 0 0 transparent
-    height: 380px
+    height: 320px
   .bottom
     background: url("/images/fondo-inferior-leyenda-empresa.png") no-repeat 0 0 transparent
     height: 50px
 
 #contenido-empresa
   width: 290px
-  height: 390px
+  height: 340px
   position: absolute
   top: 125px
   left: 22px
