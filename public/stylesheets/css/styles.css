@@ -129,25 +129,26 @@ body {
   height: 500px;
   width: 600px;
   margin-left: 50px;
+  margin-top: 20px;
 }
-/* line 15, ../../../app/stylesheets/styles.sass */
+/* line 16, ../../../app/stylesheets/styles.sass */
 #izquierda .top {
   background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent;
   height: 50px;
   margin-top: 10px;
 }
-/* line 19, ../../../app/stylesheets/styles.sass */
+/* line 20, ../../../app/stylesheets/styles.sass */
 #izquierda .centro {
   background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent;
   height: 435px;
 }
-/* line 22, ../../../app/stylesheets/styles.sass */
+/* line 23, ../../../app/stylesheets/styles.sass */
 #izquierda .bottom {
   background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent;
   height: 55px;
 }
 
-/* line 26, ../../../app/stylesheets/styles.sass */
+/* line 27, ../../../app/stylesheets/styles.sass */
 #contenido-zoom {
   position: absolute;
   width: 520px;
@@ -156,7 +157,7 @@ body {
   z-index: 0;
 }
 
-/* line 33, ../../../app/stylesheets/styles.sass */
+/* line 34, ../../../app/stylesheets/styles.sass */
 #zoom {
   height: 375px;
   width: 450px;
@@ -164,7 +165,7 @@ body {
   margin-left: 36px;
 }
 
-/* line 39, ../../../app/stylesheets/styles.sass */
+/* line 40, ../../../app/stylesheets/styles.sass */
 #icono-hoja {
   background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent;
   height: 50px;
@@ -174,19 +175,19 @@ body {
   margin-top: 20px;
 }
 
-/* line 47, ../../../app/stylesheets/styles.sass */
+/* line 48, ../../../app/stylesheets/styles.sass */
 #contenido-zoom .nombre-producto {
   margin-left: 35px;
 }
 
-/* line 50, ../../../app/stylesheets/styles.sass */
+/* line 51, ../../../app/stylesheets/styles.sass */
 #nombre-zoom {
   font-family: verdana;
   color: white;
   font-size: 24px;
 }
 
-/* line 55, ../../../app/stylesheets/styles.sass */
+/* line 56, ../../../app/stylesheets/styles.sass */
 #codigo-zoom {
   font-family: verdana;
   color: white;
@@ -195,22 +196,22 @@ body {
   margin-top: 10px;
 }
 
-/* line 62, ../../../app/stylesheets/styles.sass */
+/* line 63, ../../../app/stylesheets/styles.sass */
 #derecha {
   float: left;
   position: relative;
   width: 480px;
   height: 490px;
-  margin-top: 35px;
+  margin-top: 55px;
   border: 2px dashed black;
 }
 
-/* line 70, ../../../app/stylesheets/styles.sass */
+/* line 71, ../../../app/stylesheets/styles.sass */
 #flecha-izq, #flecha-der, #contenido-galeria {
   float: left;
 }
 
-/* line 73, ../../../app/stylesheets/styles.sass */
+/* line 74, ../../../app/stylesheets/styles.sass */
 #flecha-izq, #flecha-der {
   color: white;
   font-size: 35px;
@@ -219,58 +220,58 @@ body {
   width: 21px;
   height: 36px;
 }
-/* line 80, ../../../app/stylesheets/styles.sass */
+/* line 81, ../../../app/stylesheets/styles.sass */
 #flecha-izq p, #flecha-der p {
   width: 21px;
   height: 36px;
   cursor: pointer;
 }
 
-/* line 85, ../../../app/stylesheets/styles.sass */
+/* line 86, ../../../app/stylesheets/styles.sass */
 #flecha-izq p {
   background: url(/images/flecha-izquierda.png) no-repeat 0 0;
 }
 
-/* line 88, ../../../app/stylesheets/styles.sass */
+/* line 89, ../../../app/stylesheets/styles.sass */
 #flecha-der p {
   background: url(/images/flecha-derecha.png) no-repeat 0 0;
 }
 
-/* line 91, ../../../app/stylesheets/styles.sass */
+/* line 92, ../../../app/stylesheets/styles.sass */
 #galeria {
   margin-top: 25px;
 }
 
-/* line 94, ../../../app/stylesheets/styles.sass */
+/* line 95, ../../../app/stylesheets/styles.sass */
 #contenido-galeria {
   width: 340px;
 }
 
-/* line 97, ../../../app/stylesheets/styles.sass */
+/* line 98, ../../../app/stylesheets/styles.sass */
 .lista-thumbs {
   float: left;
 }
 
-/* line 101, ../../../app/stylesheets/styles.sass */
+/* line 102, ../../../app/stylesheets/styles.sass */
 #derecha .lista-container {
   width: 340px;
   height: 200px;
   float: left;
   margin: 0 10px;
 }
-/* line 106, ../../../app/stylesheets/styles.sass */
+/* line 107, ../../../app/stylesheets/styles.sass */
 #derecha .scrollable {
   position: relative;
   overflow: hidden;
   height: 200px;
   width: 340px;
 }
-/* line 111, ../../../app/stylesheets/styles.sass */
+/* line 112, ../../../app/stylesheets/styles.sass */
 #derecha .scrollable .items {
   width: 2000em;
   position: absolute;
 }
-/* line 114, ../../../app/stylesheets/styles.sass */
+/* line 115, ../../../app/stylesheets/styles.sass */
 #derecha .lista-thumbs .thumb {
   width: 100px;
   height: 83px;
@@ -279,15 +280,15 @@ body {
   margin: 10px 10px 10px 0;
   display: block;
 }
-/* line 121, ../../../app/stylesheets/styles.sass */
+/* line 122, ../../../app/stylesheets/styles.sass */
 #derecha .lista-thumbs .thumb.last {
   margin-right: 0;
 }
-/* line 123, ../../../app/stylesheets/styles.sass */
+/* line 124, ../../../app/stylesheets/styles.sass */
 #derecha .lista-thumbs .thumb a {
   display: block;
 }
-/* line 125, ../../../app/stylesheets/styles.sass */
+/* line 126, ../../../app/stylesheets/styles.sass */
 #derecha #descripcion {
   clear: left;
   float: left;
@@ -295,32 +296,32 @@ body {
   position: absolute;
   bottom: 0;
 }
-/* line 131, ../../../app/stylesheets/styles.sass */
+/* line 132, ../../../app/stylesheets/styles.sass */
 #derecha #descripcion .info {
   position: relative;
   padding: 10px 20px;
   background: url(/images/pixel-productos-info.png) repeat-y 0 0;
 }
-/* line 135, ../../../app/stylesheets/styles.sass */
+/* line 136, ../../../app/stylesheets/styles.sass */
 #derecha #descripcion h2 {
   font-weight: lighter;
   color: white;
   padding: 10px 0;
 }
-/* line 139, ../../../app/stylesheets/styles.sass */
+/* line 140, ../../../app/stylesheets/styles.sass */
 #derecha #descripcion .info p {
   font-size: 13px;
   text-align: justify;
   line-height: 1.4em;
   color: #f8fcdd;
 }
-/* line 144, ../../../app/stylesheets/styles.sass */
+/* line 145, ../../../app/stylesheets/styles.sass */
 #derecha #abre-especs {
   width: 480px;
   background: url(/images/pixel-productos-especificaciones.png) repeat-y 0 0;
   float: left;
 }
-/* line 148, ../../../app/stylesheets/styles.sass */
+/* line 149, ../../../app/stylesheets/styles.sass */
 #derecha #abre-especs a {
   font-size: 16px;
   padding: 10px 0;
@@ -330,7 +331,7 @@ body {
   text-decoration: none;
 }
 
-/* line 156, ../../../app/stylesheets/styles.sass */
+/* line 157, ../../../app/stylesheets/styles.sass */
 #especs {
   position: absolute;
   bottom: 38px;
@@ -341,38 +342,38 @@ body {
   width: 100%;
   overflow: auto;
 }
-/* line 165, ../../../app/stylesheets/styles.sass */
+/* line 166, ../../../app/stylesheets/styles.sass */
 #especs p {
   font-size: 14px;
 }
-/* line 167, ../../../app/stylesheets/styles.sass */
+/* line 168, ../../../app/stylesheets/styles.sass */
 #especs .spec {
   width: 100%;
   margin: 5px 0;
   clear: both;
 }
-/* line 171, ../../../app/stylesheets/styles.sass */
+/* line 172, ../../../app/stylesheets/styles.sass */
 #especs .spec p {
   padding: 0;
   margin: 10px;
   margin-bottom: 0;
 }
-/* line 175, ../../../app/stylesheets/styles.sass */
+/* line 176, ../../../app/stylesheets/styles.sass */
 #especs .spec p.label {
   background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent;
   padding: 3px;
 }
-/* line 178, ../../../app/stylesheets/styles.sass */
+/* line 179, ../../../app/stylesheets/styles.sass */
 #especs .spec p.dato-1, #especs .spec p.dato-2 {
   text-align: right;
   width: 40%;
   margin: 5px 25px 10px 20px;
 }
-/* line 182, ../../../app/stylesheets/styles.sass */
+/* line 183, ../../../app/stylesheets/styles.sass */
 #especs .spec p.dato-1 {
   float: left;
 }
-/* line 184, ../../../app/stylesheets/styles.sass */
+/* line 185, ../../../app/stylesheets/styles.sass */
 #especs .spec p.dato-2 {
   float: right;
 }
