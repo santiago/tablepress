@@ -201,22 +201,23 @@ body {
 /* line 67, ../../../app/stylesheets/cantos.sass */
 #derecha {
   height: 500px;
-  width: 470px;
+  width: 480px;
   float: left;
   position: relative;
   z-index: 3;
-  margin-left: 60px;
+  margin-left: 10px;
+  margin-top: 75px;
 }
 
-/* line 75, ../../../app/stylesheets/cantos.sass */
+/* line 76, ../../../app/stylesheets/cantos.sass */
 #fondo-derecha {
-  background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent;
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0 transparent;
   height: 350px;
   margin-top: 120px;
   position: relative;
 }
 
-/* line 81, ../../../app/stylesheets/cantos.sass */
+/* line 82, ../../../app/stylesheets/cantos.sass */
 #texto-cantos-tableros, #texto-tableros {
   color: #f8fcdd;
   line-height: 1.6em;
@@ -229,13 +230,13 @@ body {
   text-align: justify;
   font-size: 16px;
 }
-/* line 92, ../../../app/stylesheets/cantos.sass */
+/* line 93, ../../../app/stylesheets/cantos.sass */
 #texto-cantos-tableros b, #texto-tableros b {
   font-size: 18px;
   color: white;
 }
 
-/* line 96, ../../../app/stylesheets/cantos.sass */
+/* line 97, ../../../app/stylesheets/cantos.sass */
 #texto-tableros {
   margin-top: 140px;
 }
