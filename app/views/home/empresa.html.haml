@@ -2,7 +2,11 @@
   .top &nbsp;
   .centro &nbsp;
   .bottom &nbsp;
-  #foto-empresa &nbsp;
+  #fotos-empresa
+    %img{:src=>"/images/foto-empresa.jpg"}
+    %img{:src=>"/images/foto-empresa-2.jpg"}
+    %img{:src=>"/images/foto-empresa-3.jpg"}   
+    %img{:src=>"/images/foto-empresa-4.jpg"}
 #derecha
   .top &nbsp;
   .centro &nbsp;
@@ -17,3 +21,8 @@
     Nuestros equipos de ultima generacion permiten hacer enchape en materiales de diferentes sustratos como TRIPLEX, MDF, MUF, TABLEX, en diferentes calibres, de acuerdo a las necesidades del arquitecto, ebanista o carpintero y con alta capacidad de respuesta en la entrega oportuna y optima, facilitando el manejo del inventario de nuestros clientes.
 =content_for(:stylesheets) do
   = stylesheet_link_tag 'css/empresa.css', :media => 'screen'
+=content_for(:javascripts) do
+  = jquery_plugin "cycle/jquery.cycle.lite.min"
+  = javascript_include_tag "slideshow"
+  :javascript
+    $("#fotos-empresa").cycle();

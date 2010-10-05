@@ -152,6 +152,13 @@ body {
 }
 
 /* line 28, ../../../app/stylesheets/empresa.sass */
+#fotos-empresa {
+  position: absolute;
+  top: 100px;
+  left: 89px;
+}
+
+/* line 33, ../../../app/stylesheets/empresa.sass */
 #foto-empresa {
   background: url("/images/foto-empresa-2.png") no-repeat 0 0 transparent;
   height: 500px;
@@ -164,7 +171,7 @@ body {
   left: 9px;
 }
 
-/* line 39, ../../../app/stylesheets/empresa.sass */
+/* line 44, ../../../app/stylesheets/empresa.sass */
 #derecha {
   height: 500px;
   width: 400px;
@@ -174,24 +181,24 @@ body {
   position: relative;
   margin-top: 35px;
 }
-/* line 47, ../../../app/stylesheets/empresa.sass */
+/* line 52, ../../../app/stylesheets/empresa.sass */
 #derecha .top {
   background: url("/images/fondo-superior-leyenda-empresa.png") no-repeat 0 0 transparent;
   height: 70px;
   margin-top: 45px;
 }
-/* line 51, ../../../app/stylesheets/empresa.sass */
+/* line 56, ../../../app/stylesheets/empresa.sass */
 #derecha .centro {
   background: url("/images/pixel-leyenda-empresa.png") repeat-y 0 0 transparent;
   height: 320px;
 }
-/* line 54, ../../../app/stylesheets/empresa.sass */
+/* line 59, ../../../app/stylesheets/empresa.sass */
 #derecha .bottom {
   background: url("/images/fondo-inferior-leyenda-empresa.png") no-repeat 0 0 transparent;
   height: 50px;
 }
 
-/* line 58, ../../../app/stylesheets/empresa.sass */
+/* line 63, ../../../app/stylesheets/empresa.sass */
 #contenido-empresa {
   width: 290px;
   height: 340px;

@@ -48,12 +48,27 @@
   background-color: black;
   opacity: 0.3;
   position: absolute;
-  top: 77px;
   left: 0px;
   z-index: 1;
 }
-
+/* line 41, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .seleccionado.off {
+  display: none;
+}
 /* line 43, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .seleccionado.chapilla {
+  top: 77px;
+}
+/* line 45, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .seleccionado.cantos {
+  top: 126px;
+}
+/* line 47, ../../../app/stylesheets/desplegable.sass */
+#desplegable-fondo .seleccionado.tableros {
+  top: 173px;
+}
+
+/* line 50, ../../../app/stylesheets/desplegable.sass */
 #productos-lista .menu-desplegable {
   color: white;
   z-index: 5;
@@ -62,4 +77,5 @@
   top: -10px;
   display: block;
   text-decoration: none;
+  width: 120px;
 }
