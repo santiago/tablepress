@@ -33,6 +33,7 @@
             %a#beneficios.texto-menu{:href => "/home/beneficios", :class=>"#{@at=='beneficios' ? 'on' : nil}"} beneficios
       #inferior
         = yield :layout
+      = yield :inicio
     #background
       %img.stretch{:src => "/images/nogal.jpg"}/
     = render "shared/javascripts"

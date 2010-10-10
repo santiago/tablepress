@@ -1,11 +1,8 @@
 @import layout
 
-$derecha_width: 480px
-
 #izquierda
   height: 500px
-  width: 560px
-  margin-left: 40px
+  width: 557px
   margin-top: 20px
   float: left
 
@@ -36,7 +33,6 @@ $derecha_width: 480px
   margin-top: 50px
 
 #zoom
-  // background: url("/images/cantos-2.png") no-repeat 0 0 transparent
   height: 375px
   position: absolute
   width: 450px
@@ -63,16 +59,14 @@ $derecha_width: 480px
 
 #nombre-zoom, #codigo-zoom
   font-family: verdana
-  color: #FFFFFF
+  color: white
   font-size: 24px
 
 #derecha
   height: 500px
-  width: 470px
   float: left
   position: relative
   z-index: 3
-  margin-left: 60px
 
 #fondo-derecha
   background: url("/images/pixel-contacto-formulario.png") repeat-y 0 0 transparent
@@ -81,7 +75,7 @@ $derecha_width: 480px
   position: relative
 
 #texto-cantos-tableros, #texto-tableros
-  color: #F8FCDD
+  color: #f8fcdd
   line-height: 1.6em
   width: 390px
   margin-top: 165px
@@ -91,22 +85,23 @@ $derecha_width: 480px
   left: 0px
   text-align: justify
   font-size: 16px
-  b
-    font-size: 18px
-    color: #FFFFFF
+
+#texto-cantos-tableros b
+  font-size: 18px
+  color: white
 
 #texto-tableros
+  b
+    font-size: 18px
+    color: white
   margin-top: 140px
 
 #derecha
   float: left
   position: relative
-  width: $derecha_width
+  width: 423px
   height: 490px
   margin-top: 55px
-  border: 2px dashed black
-
-#derecha
   .lista-thumbs .thumb
     width: 100px
     height: 83px
@@ -127,7 +122,7 @@ $derecha_width: 480px
     .info
       position: relative
       padding: 10px 20px
-      background: url(/images/pixel-productos-info.png) repeat-y 0 0
+      background: url("/images/pixel-productos-info.png") repeat-y 0 0
     h2
       font-weight: lighter
       color: white
@@ -136,10 +131,10 @@ $derecha_width: 480px
       font-size: 13px
       text-align: justify
       line-height: 1.4em
-      color: #F8FCDD
+      color: #f8fcdd
   #abre-especs
-    width: $derecha_width
-    background: url(/images/pixel-productos-especificaciones.png) repeat-y 0 0
+    width: 430px
+    background: url("/images/pixel-productos-especificaciones.png") repeat-y 0 0
     float: left
     a
       font-size: 16px
@@ -153,7 +148,7 @@ $derecha_width: 480px
   position: absolute
   bottom: 38px
   left: 0
-  background: url(/images/pixel-productos-info.png) repeat-y 0 0
+  background: url("/images/pixel-productos-info.png") repeat-y 0 0
   color: white
   height: 340px
   width: 100%
@@ -173,7 +168,6 @@ $derecha_width: 480px
         padding: 3px
       &.dato-1, &.dato-2
         text-align: right
-        // width: 40%
         margin: 5px 25px 10px 20px
       &.dato-1
         float: left
