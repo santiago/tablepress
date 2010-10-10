@@ -1,0 +1,20 @@
+/* line 3, ../../../app/stylesheets/inicio.sass */
+#inferior {
+  width: 980px;
+}
+
+/* line 6, ../../../app/stylesheets/inicio.sass */
+#inicio-logo img {
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+/* line 11, ../../../app/stylesheets/inicio.sass */
+#linea-fondo {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  top: 500px;
+}

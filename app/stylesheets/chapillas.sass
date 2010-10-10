@@ -1,0 +1,183 @@
+@import layout
+
+#izquierda-fondo
+  position: relative
+  width: 517px
+  z-index: 0
+
+#izquierda
+  float: left
+  height: 500px
+  width: 557px
+  margin-top: 20px
+  .top
+    background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent
+    height: 50px
+    margin-top: 10px
+  .centro
+    background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent
+    height: 435px
+  .bottom
+    background: url("/images/fondo-zoom-inferior.png") no-repeat scroll 0 0 transparent
+    height: 55px
+
+#contenido-zoom
+  position: absolute
+  width: 520px
+  top: 40px
+  left: 0
+  z-index: 0
+
+#zoom
+  height: 375px
+  width: 450px
+  margin-top: 10px
+  margin-left: 36px
+
+#icono-hoja
+  background: url("/images/hoja-table-press.png") no-repeat 0 0 transparent
+  height: 50px
+  width: 50px
+  float: right
+  margin-right: 35px
+  margin-top: 20px
+
+#contenido-zoom .nombre-producto
+  margin-left: 35px
+
+#nombre-zoom
+  font-family: verdana
+  color: white
+  font-size: 24px
+
+#codigo-zoom
+  font-family: verdana
+  color: white
+  font-size: 24px
+  font-size: 20px
+  margin-top: 10px
+
+#derecha
+  float: left
+  position: relative
+  width: 422px
+  height: 490px
+  margin-top: 55px
+
+#flecha-izq, #flecha-der, #contenido-galeria
+  float: left
+
+#flecha-izq, #flecha-der
+  color: white
+  font-size: 35px
+  font-weight: 900
+  padding: 74px 10px 0px
+  width: 21px
+  height: 36px
+
+#flecha-izq p, #flecha-der p
+  width: 21px
+  height: 36px
+  cursor: pointer
+
+#flecha-izq p
+  background: url("/images/flecha-izquierda.png") no-repeat 0 0
+
+#flecha-der p
+  background: url("/images/flecha-derecha.png") no-repeat 0 0
+
+#galeria
+  margin-top: 25px
+
+#contenido-galeria
+  width: 340px
+
+.lista-thumbs
+  float: left
+
+#derecha
+  .lista-container
+    width: 340px
+    height: 200px
+    float: left
+    margin: 0 10px
+  .scrollable
+    position: relative
+    overflow: hidden
+    height: 200px
+    width: 340px
+    .items
+      width: 2000em
+      position: absolute
+  .lista-thumbs .thumb
+    width: 100px
+    height: 83px
+    background-color: white
+    float: left
+    margin: 10px 10px 10px 0
+    display: block
+    &.last
+      margin-right: 0
+    a
+      display: block
+  #descripcion
+    clear: left
+    float: left
+    margin-top: 20px
+    position: absolute
+    bottom: 0
+    .info
+      position: relative
+      padding: 10px 20px
+      background: url("/images/pixel-productos-info.png") repeat-y 0 0
+    h2
+      font-weight: lighter
+      color: white
+      padding: 10px 0
+    .info p
+      font-size: 13px
+      text-align: justify
+      line-height: 1.4em
+      color: #f8fcdd
+  #abre-especs
+    width: 422px
+    background: url("/images/pixel-productos-especificaciones.png") repeat-y 0 0
+    float: left
+    a
+      font-size: 16px
+      padding: 10px 0
+      float: right
+      margin-right: 50px
+      color: white
+      text-decoration: none
+
+#especs
+  position: absolute
+  bottom: 38px
+  left: 0
+  background: url(/images/pixel-productos-info.png) repeat-y 0 0
+  color: white
+  height: 235px
+  width: 100%
+  overflow: auto
+  p
+    font-size: 14px
+  .spec
+    width: 100%
+    margin: 5px 0
+    clear: both
+    p
+      padding: 0
+      margin: 10px
+      margin-bottom: 0
+      &.label
+        background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent
+        padding: 3px
+      &.dato-1, &.dato-2
+        text-align: right
+        width: 40%
+        margin: 5px 25px 10px 20px
+      &.dato-1
+        float: left
+      &.dato-2
+        float: right

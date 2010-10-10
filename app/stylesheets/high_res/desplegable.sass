@@ -1,0 +1,58 @@
+#menu
+  #productos-item
+    width: 149px
+    height: 1px
+  #productos
+    position: absolute
+    z-index: 2000
+
+#productos-lista
+  position: absolute
+  z-index: 4
+  // left: 489px
+  // height: 220px
+  width: 100px
+  li.first
+    margin-top: 70px
+  z-index: 10
+
+#desplegable-fondo
+  position: absolute
+  z-index: 1000
+  top: 0px
+  left: 22px
+  width: 141px
+  .centro
+    background: url("/images/pixel-desplegable.png") repeat-y 0 0 transparent
+    height: 200px
+    width: 143px
+  .bottom
+    background: url("/images/desplegable-bottom.png") no-repeat 0 0 transparent
+    width: 143px
+
+#desplegable-fondo .seleccionado
+  height: 35px
+  width: 141px
+  background-color: #000000
+  opacity: 0.3
+  position: absolute
+  left: 0px
+  z-index: 1
+  &.off
+    display: none
+  &.chapilla
+    top: 77px
+  &.cantos
+    top: 126px
+  &.tableros
+    top: 173px
+
+#productos-lista .menu-desplegable
+  color: #FFFFFF
+  z-index: 5
+  margin-left: 20px
+  line-height: 3em
+  top: -10px
+  display: block
+  text-decoration: none
+  width: 120px
