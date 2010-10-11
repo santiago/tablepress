@@ -7,7 +7,9 @@
       #contacto
         %img{:src=>"/images/logo-contacto.png"}
         %p#contacto-titulo Cont&aacute;ctenos
+        %a#contacto-mail{:href => "mailto:gerencia@table-press.com"} gerencia@table-press.com
         %a#contacto-mail{:href => "mailto:ventas@table-press.com"} ventas@table-press.com
+        %a#contacto-mail{:href => "mailto:tesoreria@table-press.com"} tesoreria@table-press.com
         %p#contacto-informacion
           Carrera 42 # 75-367 Interior 104
           %br/
@@ -24,10 +26,10 @@
       %input{:type => "text", :name => "nombre"}/
       #dirigido
         %p.formulario dirigido a
-        %select
-          %option Ventas
-          %option Gerencia
-          %option Contabilidad
+        %select{:name=>"contacto"}
+          %option{:value=>"ventas@table-press.com"} Ventas
+          %option{:value=>"gerencia@table-press.com"} Gerencia
+          %option{:value=>"tesoreria@table-press.com"} Tesorer&iacute;a
       %p.formulario e-mail
       %input{:type => "text", :name => "email"}/
       %p.formulario asunto

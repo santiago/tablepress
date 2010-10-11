@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
     $("#contacto-formulario button").click(function(e) {
 	var data= {
 	    nombre: $("#contacto-formulario").find("input[name=nombre]").val(),
+	    contacto: $("#contacto-formulario").find("select[name=contacto]").val(),
 	    email: $("#contacto-formulario").find("input[name=email]").val(),
 	    asunto: $("#contacto-formulario").find("input[name=asunto]").val(),
 	    mensaje: $("#contacto-formulario").find("textarea[name=mensaje]").val()

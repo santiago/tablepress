@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
     $("#productos-item").mouseenter(function() {
 	$("#desplegable-fondo").slideDown(function() {
-	    
 	});
     });
 
     $("#desplegable-fondo").mouseleave(function() {
+    // $("#wrap").mouseenter(function() {
 	$("#desplegable-fondo").slideUp();
     });
 

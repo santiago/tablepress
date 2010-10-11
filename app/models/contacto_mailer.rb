@@ -2,10 +2,9 @@
 class ContactoMailer < ActionMailer::Base
   def a_ventas(contacto)
     subject    "Email de contacto"
-    recipients "santiago@ontoworks.com"
+    recipients "santiago@ontoworks.com, #{contacto[:contacto]}"
     # recipients "ventas@table-press.com"
     from       contacto[:email]
-    
     body       :contacto => contacto
   end
 
