@@ -3,7 +3,6 @@
 #izquierda
   height: 500px
   width: 557px
-  margin-top: 20px
   float: left
 
 #izquierda-fondo
@@ -15,7 +14,6 @@
   .top
     background: url("/images/fondo-zoom-superior.png") no-repeat 0 0 transparent
     height: 50px
-    margin-top: 10px
   .centro
     background: url("/images/pixel-zoom-centro.png") repeat-y scroll 0 0 transparent
     height: 435px
@@ -51,8 +49,7 @@
   margin-right: 35px
 
 #contenido-zoom .nombre-producto
-  height: 150px
-  position: relative
+  position: absolute
   width: 450px
   top: 392px
   left: 40px
@@ -101,7 +98,7 @@
   position: relative
   width: 423px
   height: 490px
-  margin-top: 55px
+  margin-top: 30px
   .lista-thumbs .thumb
     width: 100px
     height: 83px
@@ -144,32 +141,32 @@
       color: white
       text-decoration: none
 
-#especs
-  position: absolute
-  bottom: 38px
-  left: 0
-  background: url("/images/pixel-productos-info.png") repeat-y 0 0
-  color: white
-  height: 340px
-  width: 100%
-  overflow: auto
-  p
-    font-size: 14px
-  .spec
+  #especs-tableros
+    background: url("/images/pixel-productos-info.png") repeat-y 0 0
+    color: white
+    height: 340px
     width: 100%
-    margin: 5px 0
-    clear: both
+    overflow: auto
+    h2
+      margin-left: 10px
+      padding-bottom: 0
     p
-      padding: 0
-      margin: 10px
-      margin-bottom: 0
-      &.label
-        background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent
-        padding: 3px
-      &.dato-1, &.dato-2
-        text-align: right
-        margin: 5px 25px 10px 20px
-      &.dato-1
-        float: left
-      &.dato-2
-        float: right
+      font-size: 12px
+    .spec
+      width: 100%
+      margin: 5px 0
+      clear: both
+      p
+        padding: 0
+        margin: 10px
+        margin-bottom: 0
+        &.label
+          background: url("/images/pixel-especificaciones.png") repeat-y scroll 0 0 transparent
+          padding: 3px
+        &.dato-1, &.dato-2
+          text-align: right
+          margin: 5px 25px 10px 20px
+        &.dato-1
+          float: left
+        &.dato-2
+          float: right

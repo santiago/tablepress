@@ -33,7 +33,8 @@
         Medida estándar: Hasta 1.20 m x 2.40 m
         %br/
         Enchapamos tableros en formica
-    #especs{:style => "display:none"}
+    #especs-tableros
+      %h2 Especificaciones
       .spec 
         %p.label Materiales
         .datos
@@ -59,12 +60,9 @@
         .datos
           %p.dato-1 7 Kg - 20 Kg - 32 Kg - 35 Kg - 39 Kg
           %p.dato-2 
-    #abre-especs
-      %a{:href => "#"} Especificaciones
 
 =content_for(:stylesheets) do
   = stylesheet_link_tag 'css/tableros.css', :media => 'screen'
 =content_for(:javascripts) do
   = jquery_plugin "cycle/jquery.cycle.lite.min"
   = javascript_include_tag "slideshow"
-  = javascript_include_tag "app"

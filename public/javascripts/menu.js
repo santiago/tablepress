@@ -4,9 +4,11 @@ jQuery(document).ready(function($) {
 	});
     });
 
-    $("#desplegable-fondo").mouseleave(function() {
+    $("#desplegable-fondo").mouseleave(function(e) {
     // $("#wrap").mouseenter(function() {
-	$("#desplegable-fondo").slideUp();
+	if ($(e.originalTarget).attr("id") != "productos-lista") {
+	    $("#desplegable-fondo").slideUp();
+	}
     });
 
     $("#productos-lista li a").hover(
@@ -19,6 +21,8 @@ jQuery(document).ready(function($) {
 	    $("#desplegable-fondo .seleccionado")
 		.addClass("off")
 		.removeClass($(this).text());
+	}).click(function() {
+	    $(this).blur();
 	});
 
 });

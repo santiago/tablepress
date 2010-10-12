@@ -62,7 +62,9 @@
           %p.dato-1 10%
           %p.dato-2 +&oacute;- 2%
     #abre-especs
-      %a{:href => "#"} Especificaciones
+      %a{:href => "#"} 
+        %span Especificaciones
+        %span.flechita.arriba &nbsp;
 
   #products-data{:style=>"display:none;"}
     - @products.each do |product|

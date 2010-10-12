@@ -143,6 +143,7 @@
     width: 422px
     background: url("/images/pixel-productos-especificaciones.png") repeat-y 0 0
     float: left
+    position: relative
     a
       font-size: 16px
       padding: 10px 0
@@ -150,6 +151,16 @@
       margin-right: 50px
       color: white
       text-decoration: none
+    .flechita
+      width: 14px
+      height: 14px
+      position: absolute
+      right: 20px
+      top: 13px
+      &.arriba
+        background: url(/images/flechas-arriba.png) no-repeat 0 0
+      &.abajo
+        background: url(/images/flechas-abajo.png) no-repeat 0 0
 
 #especs
   position: absolute
@@ -157,7 +168,7 @@
   left: 0
   background: url(/images/pixel-productos-info.png) repeat-y 0 0
   color: white
-  height: 235px
+  height: 220px
   width: 100%
   overflow: auto
   p
@@ -176,7 +187,7 @@
       &.dato-1, &.dato-2
         text-align: right
         width: 40%
-        margin: 5px 25px 10px 20px
+        margin: 5px 15px 5px 15px
       &.dato-1
         float: left
       &.dato-2
