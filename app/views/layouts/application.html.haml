@@ -13,14 +13,14 @@
             %a#empresa.texto-menu{:href => "/home/empresa", :class=>"#{@at=='empresa' ? 'on' : nil}"} empresa
           %li#productos-item
             %a#productos.texto-menu{:href => "/home/productos", :class=>"#{@at=='productos' ? 'on' : nil}"} productos
-            #desplegable-fondo{:style=>"display:none"}
+            #desplegable-fondo{:style=>"display:block"}
               %ul#productos-lista
                 %li.first
                   %a.menu-desplegable{:href => "/productos/chapilla"} chapilla
                 %li
                   %a.menu-desplegable{:href => "/productos/cantos"} cantos
                 %li
-                  %a.menu-desplegable{:href => "/productos/tableros#"} tableros
+                  %a.menu-desplegable{:href => "/productos/tableros"} tableros
               .centro &nbsp;
               .bottom &nbsp;
               .seleccionado.off &nbsp;
@@ -34,8 +34,8 @@
       #inferior
         = yield :layout
       = yield :inicio
-    #background
-      %img.stretch{:src => "/images/nogal.jpg"}/
+    = # #background
+    = #  %img.stretch{:src => "/images/nogal.jpg"}/
     = render "shared/javascripts"
     = javascript_include_tag "menu"
     = yield :javascripts
