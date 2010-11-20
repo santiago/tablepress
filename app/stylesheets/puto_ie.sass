@@ -15,9 +15,42 @@
 #wrap #superior
   #menu
     #productos-item
-      
+      height: 70px
+      width: 141px
+      &.on
+        background-image: url(/images/70px-pixel.png)
 #desplegable-fondo
+  .centro
+    background-color: transparent
+    background-image: url(/images/left-bottom-corner.png)
+    background-repeat: no-repeat
+    background-position: 0px -19px
+    position: absolute
+    top: 70px
+    left: 0px
+    height: 31px
+    width: 7px
+  .bottom
+    background-color: transparent
+    background-image: url(/images/right-bottom-corner.png)
+    background-repeat: no-repeat
+    background-position: 0px -19px
+    position: absolute
+    top: 70px
+    right: -297px
+    height: 31px
+    width: 7px
   #productos-lista
-    // margin-top: 70px
+    margin-top: 70px
+    margin-left: 7px
+    background-image: url(/images/70px-pixel.png)
+    width: 424px
+    height: 28px
+    padding-top: 3px
     li
-      margin: 0      
+      margin: 0
+      border-right: 1px solid white
+      a
+        line-height: 1.3em
+      &.last
+        border: 0

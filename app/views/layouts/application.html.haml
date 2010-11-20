@@ -11,15 +11,15 @@
             %a#inicio.texto-menu{:href => "/", :class=>"#{@at=='inicio' ? 'on' : nil}"} inicio
           %li
             %a#empresa.texto-menu{:href => "/home/empresa", :class=>"#{@at=='empresa' ? 'on' : nil}"} empresa
-          %li#productos-item
+          %li#productos-item.on
             %a#productos.texto-menu{:href => "/home/productos", :class=>"#{@at=='productos' ? 'on' : nil}"} productos
-            #desplegable-fondo{:style=>"display:block"}
+            #desplegable-fondo{:style=>"display:none"}
               %ul#productos-lista
                 %li.first
                   %a.menu-desplegable{:href => "/productos/chapilla"} chapilla
                 %li
                   %a.menu-desplegable{:href => "/productos/cantos"} cantos
-                %li
+                %li.last
                   %a.menu-desplegable{:href => "/productos/tableros"} tableros
               .centro &nbsp;
               .bottom &nbsp;
