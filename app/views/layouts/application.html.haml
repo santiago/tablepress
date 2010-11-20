@@ -11,7 +11,7 @@
             %a#inicio.texto-menu{:href => "/", :class=>"#{@at=='inicio' ? 'on' : nil}"} inicio
           %li
             %a#empresa.texto-menu{:href => "/home/empresa", :class=>"#{@at=='empresa' ? 'on' : nil}"} empresa
-          %li#productos-item.on
+          %li#productos-item
             %a#productos.texto-menu{:href => "/home/productos", :class=>"#{@at=='productos' ? 'on' : nil}"} productos
             #desplegable-fondo{:style=>"display:none"}
               %ul#productos-lista

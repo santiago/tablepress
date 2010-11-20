@@ -27,6 +27,7 @@ jQuery(document).ready(function($) {
 	    });
     } else {
 	$("#productos-item").mouseenter(function() {
+	    $(this).addClass("on");
 	    $("#desplegable-fondo").show(function() {
 	    });
 	});
@@ -34,6 +35,7 @@ jQuery(document).ready(function($) {
 	    // $("#wrap").mouseenter(function() {
 	    // if ($(e.originalTarget).attr("id") != "productos-lista") {
 	    $("#desplegable-fondo").hide();
+	    $("#productos-item").removeClass("on")
 	    e.stopPropagation();
 	    // }
 	});	
