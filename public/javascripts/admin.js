@@ -97,7 +97,7 @@ $.widget("ui.product", {
 	    'uploader'       : '/javascripts/thirdparty/jquery/uploadify/uploadify.swf',
 	    'script'         : '/products/image?' + session_key_name + '=' + session_key_val,
 	    'cancelImg'      : '/javascripts/thirdparty/jquery/uploadify/cancel.png',
-	    'folder'         : 'uploads/pictures',
+	    'folder'         : '/uploads/pictures',
 	    'fileDesc'        : 'Seleccione una imagen',
 	    'fileExt'        : '*.jpg;*.jpeg;*.gif;*.png',
     	    'sizeLimit'      : 3145728,
@@ -112,7 +112,7 @@ $.widget("ui.product", {
 	    'uploader'       : '/javascripts/thirdparty/jquery/uploadify/uploadify.swf',
 	    'script'         : '/products/image?' + session_key_name + '=' + session_key_val,
 	    'cancelImg'      : '/javascripts/thirdparty/jquery/uploadify/cancel.png',
-	    'folder'         : 'uploads/pictures',
+	    'folder'         : '/uploads/pictures',
 	    'fileDesc'        : 'Seleccione una imagen',
 	    'fileExt'        : '*.jpg;*.jpeg;*.gif;*.png',
     	    'sizeLimit'      : 3145728,
@@ -121,7 +121,10 @@ $.widget("ui.product", {
 	    'buttonText'     : "click",
 	    'width'          : 100,
 	    'onSelect': onSelectThumb,
-	    'onAllComplete': onAllCompleteThumb
+	    'onAllComplete': onAllCompleteThumb,
+	    'onError'     : function (event,ID,fileObj,errorObj) {
+		alert(errorObj.type + ' Error: ' + errorObj.info);
+	    }
 	});
     },
     _cargar_especs: function() {
