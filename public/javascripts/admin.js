@@ -61,11 +61,11 @@ $.widget("ui.product", {
 
 	    if (producto.id) {
 		$.post("/products/"+producto.id, {product:producto, _method:"put"}, function(data) {
-	    	    window.location= "/admin/products/"+producto.id;
+	    	    // window.location= "/admin/products/"+producto.id;
 		});
 	    } else {
 		$.post("/products", {product:producto}, function(data) {
-	    	    window.location= "/admin/products/"+data.product.id;
+	    	    // window.location= "/admin/products/"+data.product.id;
 		});
 	    }
 	    e.preventDefault();
@@ -77,6 +77,7 @@ $.widget("ui.product", {
         };
 	
         var onAllCompleteZoom= function(e, data) {
+	    console.log("completed zoom");
             /*$("#photo-title-ajax").val("");
             $(".uploadify-controls").hide();
             self._reload_photos();*/
@@ -88,6 +89,7 @@ $.widget("ui.product", {
         };
 	
         var onAllCompleteThumb= function(e, data) {
+	    console.log("complete thumb");
             /*$("#photo-title-ajax").val("");
             $(".uploadify-controls").hide();
             self._reload_photos();*/
