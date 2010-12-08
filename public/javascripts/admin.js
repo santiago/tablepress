@@ -94,9 +94,9 @@ $.widget("ui.product", {
         };
 
 	$("#uploadify-zoom").uploadify({
-	    'uploader'       : '/javascripts/thirdparty/uploadify/uploadify.swf',
+	    'uploader'       : '/javascripts/thirdparty/jquery/uploadify/uploadify.swf',
 	    'script'         : '/products/image?' + session_key_name + '=' + session_key_val,
-	    'cancelImg'      : '/javascripts/thirdparty/uploadify/cancel.png',
+	    'cancelImg'      : '/javascripts/thirdparty/jquery/uploadify/cancel.png',
 	    'folder'         : 'uploads/pictures',
 	    'fileDesc'        : 'Seleccione una imagen',
 	    'fileExt'        : '*.jpg;*.jpeg;*.gif;*.png',
@@ -109,9 +109,9 @@ $.widget("ui.product", {
 	});
 
 	$("#uploadify-thumb").uploadify({
-	    'uploader'       : '/javascripts/thirdparty/uploadify/uploadify.swf',
+	    'uploader'       : '/javascripts/thirdparty/jquery/uploadify/uploadify.swf',
 	    'script'         : '/products/image?' + session_key_name + '=' + session_key_val,
-	    'cancelImg'      : '/javascripts/thirdparty/uploadify/cancel.png',
+	    'cancelImg'      : '/javascripts/thirdparty/jquery/uploadify/cancel.png',
 	    'folder'         : 'uploads/pictures',
 	    'fileDesc'        : 'Seleccione una imagen',
 	    'fileExt'        : '*.jpg;*.jpeg;*.gif;*.png',

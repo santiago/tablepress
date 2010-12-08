@@ -1,3 +1,4 @@
+<?php
 /*
 Uploadify v2.1.4
 Release Date: November 8, 2010
@@ -22,31 +23,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-.uploadifyQueueItem {
-	background-color: #F5F5F5;
-	border: 2px solid #E5E5E5;
-	font: 11px Verdana, Geneva, sans-serif;
-	margin-top: 5px;
-	padding: 10px;
-	width: 350px;
+$fileArray = array();
+foreach ($_POST as $key => $value) {
+	if ($key != 'folder') {
+		if (file_exists($_SERVER['DOCUMENT_ROOT'] . $_POST['folder'] . '/' . $value)) {
+			$fileArray[$key] = $value;
+		}
+	}
 }
-.uploadifyError {
-	background-color: #FDE5DD !important;
-	border: 2px solid #FBCBBC !important;
-}
-.uploadifyQueueItem .cancel {
-	float: right;
-}
-.uploadifyQueue .completed {
-	background-color: #E5E5E5;
-}
-.uploadifyProgress {
-	background-color: #E5E5E5;
-	margin-top: 10px;
-	width: 100%;
-}
-.uploadifyProgressBar {
-	background-color: #0099FF;
-	height: 3px;
-	width: 1px;
-}
+echo json_encode($fileArray);
+?>
