@@ -61,11 +61,11 @@ $.widget("ui.product", {
 
 	    if (producto.id) {
 		$.post("/products/"+producto.id, {product:producto, _method:"put"}, function(data) {
-	    	    window.location= "/admin/products/"+producto.id;
+	    	    // window.location= "/admin/products/"+producto.id;
 		});
 	    } else {
 		$.post("/products", {product:producto}, function(data) {
-	    	    window.location= "/admin/products/"+data.product.id;
+	    	    // window.location= "/admin/products/"+data.product.id;
 		});
 	    }
 	    e.preventDefault();
