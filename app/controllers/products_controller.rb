@@ -49,23 +49,20 @@ class ProductsController < ApplicationController
         format.json  { render :json => @product, :status => :created, :location => @product }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @product.errors, :status => :unprocessable_entity }
       end
     end
   end
 
   # PUT /products/1
-  # PUT /products/1.xml
   def update
     @product = Product.find(params[:id])
 
     respond_to do |format|
       if @product.update_attributes(params[:product])
-        format.html { redirect_to(@product, :notice => 'Product was successfully updated.') }
-        format.xml  { head :ok }
+        format.json  { render :json => [] }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @product.errors, :status => :unprocessable_entity }
       end
     end
   end

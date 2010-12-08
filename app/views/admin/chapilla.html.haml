@@ -15,7 +15,14 @@
         %a #{@product.name}
 
   #content
-    .producto
+    .producto{:id => "#{@product.new_record? ? nil : 'producto-'+@product.id.to_s}"}
+      .control.edit
+        .activo
+          %input{:type=>"checkbox", :name=>"activo", :checked=>true}
+          %p Producto activo
+        - unless @product.new_record?
+          .eliminar
+            = link_to 'Eliminar producto', @product, :confirm => 'Está seguro?', :method => :delete
       .nombre.field.edit
         %p.label Nombre
         %input{:type=>"text", :name=>"nombre", :value=>"#{@product.name}"}
@@ -44,16 +51,9 @@
             %p.label Contenido de humedad
             %input{:type=>"text", :value=>"#{@product.specs['humedad']}"}
       = render "imagenes_field"
-      .control.edit
-        .activo
-          %input{:type=>"checkbox", :name=>"activo", :checked=>true}
-          %p Producto activo
-        - unless @product.new_record?
-          .eliminar
-            = link_to 'Eliminar producto', @product, :confirm => 'Está seguro?', :method => :delete
-
     #guardar-producto
       %a{:href=>"#"} Guardar producto
+
 
 =content_for(:stylesheets) do
   = stylesheet_link_tag 'css/admin.css', :media => 'screen'

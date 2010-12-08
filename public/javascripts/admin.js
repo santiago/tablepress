@@ -21,7 +21,6 @@ $.widget("ui.hover_class", {
     }
 });
 
-
 $.widget("ui.product_list", {
     _init: function() {
 	var $el= this.element;
@@ -45,19 +44,30 @@ $.widget("ui.product", {
 
 	$("#guardar-producto").click(function(e) {
 	    var producto= {
+		id: $el.attr("id").split("-")[1],
 		name: $el.find(".nombre input").val(),
 		code: $el.find(".codigo input").val(),
 		specs: self._cargar_especs(),
 		active: $el.find(".control .activo input").val(),
-		zoom_image: images.zoom,
-		thumb_image: images.thumb,
+		// zoom_image: images.zoom,
+		// thumb_image: images.thumb,
 		product_type: $el.find(".tipo_producto select").val()
 	    };
-            $('#uploadify-zoom, #uploadify-thumb').uploadifyUpload();
-	    $.post("/products", {product:producto}, function(data) {
-		window.location= "/admin/products/"+data.product.id;
-	    });
-	    
+	    if (images.zoom || images.thumb) {
+		if (images.zoom) producto["zoom_image"]= images.zoom;
+		if (images.thumb) producto["thumb_image"]= images.thumb;
+		$('#uploadify-zoom, #uploadify-thumb').uploadifyUpload();
+	    }
+
+	    if (producto.id) {
+		$.post("/products/"+producto.id, {product:producto, _method:"put"}, function(data) {
+	    	    window.location= "/admin/products/"+producto.id;
+		});
+	    } else {
+		$.post("/products", {product:producto}, function(data) {
+	    	    window.location= "/admin/products/"+data.product.id;
+		});
+	    }
 	    e.preventDefault();
 	});
 
@@ -113,9 +123,6 @@ $.widget("ui.product", {
 	    'onSelect': onSelectThumb,
 	    'onAllComplete': onAllCompleteThumb
 	});
-
-	
-
     },
     _cargar_especs: function() {
 	var $el= this.element;
