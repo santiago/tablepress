@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => "save_photo_ajax"
+
   # GET /products
   # GET /products.xml
   def index
